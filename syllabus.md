@@ -1,4 +1,3 @@
-# code-toolkit
 
 # Code Toolkit
 
