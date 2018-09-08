@@ -91,15 +91,18 @@ Introduction to Python II: U.S. Shootings
 
 **suggested**:
 
-- Gardner, Martin. Logic Diagrams. from *LOGIC MACHINES AND DIAGRAMS*
+- 
+The Foundations of Algorithmic Bias by *Zachary Lipton* http://approximatelycorrect.com/2016/11/07/the-foundations-of-algorithmic-bias/
+
+
 
 **choose one**:
 
-- Gigerenzer, Gerd, ed. The Empire of Chance: How Probability Changed Science and Everyday Life. Cambridge: Cambridge University Press, 1989, Section 1.6 ("Risk and Insurance")
+- Gigerenzer, Gerd, ed. The Empire of Chance: How Probability Changed Science and Everyday Life. Cambridge: Cambridge University Press, 1989, Section 1.6 ("Risk and Insurance") *posted in slack*
 
-- Desrosières, Alain. The politics of large numbers: A history of statistical reasoning. Harvard University Press, 2002. (Ch 1)
+- Desrosières, Alain. The politics of large numbers: A history of statistical reasoning. Harvard University Press, 2002. (Ch 1) *posted in slack*
 
-- Igo, Sarah Elizabeth. The Averaged American: Surveys, citizens, and the making of a mass public. Harvard University Press, 2007. (Introduction)
+- Hacking, Ian. *The Taming of Chance*, chapter 1; *the argument*. *posted in slack*
 
 ### WEEK 4
 
