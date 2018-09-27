@@ -1,100 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="898a6560-06b7-4d61-86a7-18ab39481a9b" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change beforePath="$PROJECT_DIR$/README.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Small/1/TNS_Logo1_Small_CMYK.ai" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Small/1/TNS_Logo1_Small_CMYK.eps" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Small/1/TNS_Logo1_Small_RGB.ai" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Small/1/TNS_Logo1_Small_RGB.eps" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Small/1/TNS_Logo1_Small_RGB.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Small/3/TNS_Logo3_Small_CMYK.ai" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Small/3/TNS_Logo3_Small_CMYK.eps" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Small/3/TNS_Logo3_Small_RGB.ai" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Small/3/TNS_Logo3_Small_RGB.eps" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Small/3/TNS_Logo3_Small_RGB.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/__MACOSX/._Small" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/__MACOSX/Small/._.DS_Store" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/__MACOSX/Small/._1" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/__MACOSX/Small/._3" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/__MACOSX/Small/1/._.DS_Store" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/__MACOSX/Small/1/._TNS_Logo1_Small_CMYK.ai" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/__MACOSX/Small/1/._TNS_Logo1_Small_CMYK.eps" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/__MACOSX/Small/1/._TNS_Logo1_Small_RGB.ai" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/__MACOSX/Small/1/._TNS_Logo1_Small_RGB.eps" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/__MACOSX/Small/1/._TNS_Logo1_Small_RGB.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/__MACOSX/Small/3/._.DS_Store" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/__MACOSX/Small/3/._TNS_Logo3_Small_CMYK.ai" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/__MACOSX/Small/3/._TNS_Logo3_Small_CMYK.eps" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/__MACOSX/Small/3/._TNS_Logo3_Small_RGB.ai" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/__MACOSX/Small/3/._TNS_Logo3_Small_RGB.eps" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/__MACOSX/Small/3/._TNS_Logo3_Small_RGB.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/201306-citibike-tripdata.zip" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/sqf-2017.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/Small/1/TNS_Logo1_Small_CMYK.ai" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/Small/1/TNS_Logo1_Small_CMYK.eps" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/Small/1/TNS_Logo1_Small_RGB.ai" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/Small/1/TNS_Logo1_Small_RGB.eps" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/Small/3/TNS_Logo3_Small_CMYK.ai" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/Small/3/TNS_Logo3_Small_CMYK.eps" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/Small/3/TNS_Logo3_Small_RGB.ai" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/Small/3/TNS_Logo3_Small_RGB.eps" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/Small/3/TNS_Logo3_Small_RGB.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/TNS_Logo1_Small_RGB.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/syllabus.ipynb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/syllabus.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/week1/.ipynb_checkpoints/01-Introduction-Installations-checkpoint.ipynb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/week1/.ipynb_checkpoints/02-Intro-to-Data-checkpoint.ipynb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/week1/.ipynb_checkpoints/03-UNIX-and-Terminal-checkpoint.ipynb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/week1/.ipynb_checkpoints/04-Introduction-to-Python-checkpoint.ipynb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/week1/.ipynb_checkpoints/05-Exploring-with-Pandas-checkpoint.ipynb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/week1/.ipynb_checkpoints/06-Pandas-and-Matplotlib-checkpoint.ipynb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/week1/.ipynb_checkpoints/bkplainers-checkpoint.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/week1/01-Introduction-Installations.ipynb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/week1/02-Intro-to-Data.ipynb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/week1/03-UNIX-and-Terminal.ipynb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/week1/04-Introduction-to-Python.ipynb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/week1/05-Exploring-with-Pandas.ipynb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/week1/06-Pandas-and-Matplotlib.ipynb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/week1/bkplainers.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/week2/.ipynb_checkpoints/Folium-checkpoint.ipynb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/week2/.ipynb_checkpoints/Untitled-checkpoint.ipynb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/week2/.ipynb_checkpoints/index_map-checkpoint.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/week2/.ipynb_checkpoints/lab_01-checkpoint.ipynb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/week2/.ipynb_checkpoints/policin-checkpoint.ipynb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/week2/Folium.ipynb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/week2/Untitled.ipynb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/week2/data/Country.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/week2/data/game_google.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/week2/images/folium.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/week2/images/nypd.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/week2/images/sac.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/week2/index_map.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/week2/lab_01.ipynb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/week2/policin.ipynb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/week3/.ipynb_checkpoints/Folium-checkpoint.ipynb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/week3/500_Cities__Census_Tract-level_Data__GIS_Friendly_Format___2017_release_.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/week3/Folium.ipynb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/week3/healthmap.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/week3/images/folium.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/week3/index_map.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/week3/tookit_lect_9.12.pdf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/week4/01-gapminder-probs.ipynb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/week4/01-gapminder-solns.ipynb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/week4/03-Beautiful-Soup-Scraping.ipynb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/week4/03-Intro-Spacy.ipynb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/week4/gap_data/gapminder_all.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/week4/gap_data/gapminder_gdp_africa.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/week4/gap_data/gapminder_gdp_americas.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/week4/gap_data/gapminder_gdp_asia.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/week4/gap_data/gapminder_gdp_europe.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/week4/gap_data/gapminder_gdp_oceania.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/week4/images/open_table.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/week4/images/reddit.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/week4/images/spacy_pipeline.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/week4/images/wiki_table.png" afterPath="" />
-    </list>
+    <list default="true" id="898a6560-06b7-4d61-86a7-18ab39481a9b" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -114,11 +21,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.rst" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.rst" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/source/index.rst">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="525">
               <caret line="35" column="25" lean-forward="false" selection-start-line="35" selection-start-column="25" selection-end-line="35" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="requirements.txt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/requirements.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="8" lean-forward="false" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -134,6 +51,7 @@
       <list>
         <option value="$PROJECT_DIR$/source/conf.py" />
         <option value="$PROJECT_DIR$/source/index.rst" />
+        <option value="$PROJECT_DIR$/requirements.txt" />
       </list>
     </option>
   </component>
@@ -214,6 +132,14 @@
       <option name="presentableId" value="Default" />
       <updated>1538019271260</updated>
     </task>
+    <task id="LOCAL-00001" summary="requirements">
+      <created>1538021499970</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1538021499971</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -248,6 +174,10 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="requirements" />
+    <option name="LAST_COMMIT_MESSAGE" value="requirements" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
@@ -265,6 +195,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="525">
           <caret line="35" column="25" lean-forward="false" selection-start-line="35" selection-start-column="25" selection-end-line="35" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="8" lean-forward="false" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
           <folding />
         </state>
       </provider>
