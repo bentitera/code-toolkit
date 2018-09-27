@@ -26,8 +26,8 @@ Welcome to Code Toolkit's documentation!
 
    lab_01
    lab_02-policin
-   lab_03-scrapin-records
-   lab_04-analyzing-reviews
+   
+   lab_04
    lab_05-clustering-album-art
 
 
