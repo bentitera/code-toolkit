@@ -35,8 +35,6 @@
 
 
 
-html_theme_path = [juliadoc.get_theme_dir()]
-
 
 
 extensions = ['sphinx.ext.autodoc',
