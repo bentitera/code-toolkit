@@ -1,0 +1,411 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# Exploring Data\n",
+    "\n",
+    "**GOAL**:\n",
+    "\n",
+    "- Load and describe dataset, variables, and variable types with `.info()`, `.head()`, `.columns`\n",
+    "- Explore categorical features and quantitative features using basic measures of center and spread with`.describe()`\n",
+    "- Filter values in `DataFrame` based on logical conditions\n",
+    "- Split, Apply, Combine using `groupby` method\n",
+    "- Use *histograms, boxplots, barplots,* and *countplots* to investigate distributions of quantitative variables"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Load and Describe\n",
+    "\n",
+    "![](images/nypd.png)\n",
+    "\n",
+    "Below, we have a dataset from NYCOpenData related to police incidents.  First, we load in the dataset using the `pd.read_csv()` method.  Then, using the `.info()` method, we can examine the different features, feature data types, and missing values in the data."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "%matplotlib inline\n",
+    "import matplotlib.pyplot as plt\n",
+    "import pandas as pd\n",
+    "import numpy as np\n",
+    "import seaborn as sns"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#read in the data\n",
+    "df = pd.read_csv('../data/sqf-2017.csv')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "<class 'pandas.core.frame.DataFrame'>\n",
+      "RangeIndex: 11629 entries, 0 to 11628\n",
+      "Data columns (total 86 columns):\n",
+      "STOP_FRISK_ID                                                   11629 non-null int64\n",
+      "STOP_FRISK_DATE                                                 11629 non-null object\n",
+      "STOP_FRISK_TIME                                                 11624 non-null object\n",
+      "YEAR2                                                           11629 non-null int64\n",
+      "MONTH2                                                          11629 non-null object\n",
+      "DAY2                                                            11629 non-null object\n",
+      "STOP_WAS_INITIATED                                              11629 non-null object\n",
+      "SPRINT_NUMBER                                                   11202 non-null object\n",
+      "RECORD_STATUS_CODE                                              11629 non-null object\n",
+      "ISSUING_OFFICER_RANK                                            11629 non-null object\n",
+      "ISSUING_OFFICER_COMMAND_CODE                                    11629 non-null int64\n",
+      "SUPERVISING_OFFICER_RANK                                        11629 non-null object\n",
+      "SUPERVISING_OFFICER_COMMAND_CODE                                11629 non-null int64\n",
+      "SUPERVISING_ACTION_CORRESPONDING_ACTIVITY_LOG_ENTRY_REVIEWED    11629 non-null object\n",
+      "LOCATION_IN_OUT_CODE                                            11629 non-null object\n",
+      "JURISDICTION_CODE                                               11629 non-null object\n",
+      "JURISDICTION_DESCRIPTION                                        11629 non-null object\n",
+      "OBSERVED_DURATION_MINUTES                                       11629 non-null int64\n",
+      "SUSPECTED_CRIME_DESCRIPTION                                     11629 non-null object\n",
+      "STOP_DURATION_MINUTES                                           11629 non-null int64\n",
+      "OFFICER_EXPLAINED_STOP_FLAG                                     11629 non-null object\n",
+      "OFFICER_NOT_EXPLAINED_STOP_DESCRIPTION                          11628 non-null object\n",
+      "OTHER_PERSON_STOPPED_FLAG                                       11629 non-null object\n",
+      "SUSPECT_ARRESTED_FLAG                                           11629 non-null object\n",
+      "SUSPECT_ARREST_NUMBER                                           11629 non-null object\n",
+      "SUSPECT_ARREST_OFFENSE                                          11629 non-null object\n",
+      "SUMMONS_ISSUED_FLAG                                             11629 non-null object\n",
+      "SUMMONS_NUMBER                                                  11629 non-null object\n",
+      "SUMMONS_OFFENSE_DESCRIPTION                                     11629 non-null object\n",
+      "OFFICER_IN_UNIFORM_FLAG                                         11629 non-null object\n",
+      "ID_CARD_IDENTIFIES_OFFICER_FLAG                                 11629 non-null object\n",
+      "SHIELD_IDENTIFIES_OFFICER_FLAG                                  11629 non-null object\n",
+      "VERBAL_IDENTIFIES_OFFICER_FLAG                                  11629 non-null object\n",
+      "FRISKED_FLAG                                                    11629 non-null object\n",
+      "SEARCHED_FLAG                                                   11629 non-null object\n",
+      "OTHER_CONTRABAND_FLAG                                           11629 non-null object\n",
+      "FIREARM_FLAG                                                    11629 non-null object\n",
+      "KNIFE_CUTTER_FLAG                                               11629 non-null object\n",
+      "OTHER_WEAPON_FLAG                                               11629 non-null object\n",
+      "WEAPON_FOUND_FLAG                                               11629 non-null object\n",
+      "PHYSICAL_FORCE_CEW_FLAG                                         11629 non-null object\n",
+      "PHYSICAL_FORCE_DRAW_POINT_FIREARM_FLAG                          11629 non-null object\n",
+      "PHYSICAL_FORCE_HANDCUFF_SUSPECT_FLAG                            11629 non-null object\n",
+      "PHYSICAL_FORCE_OC_SPRAY_USED_FLAG                               11629 non-null object\n",
+      "PHYSICAL_FORCE_OTHER_FLAG                                       11629 non-null object\n",
+      "PHYSICAL_FORCE_RESTRAINT_USED_FLAG                              11629 non-null object\n",
+      "PHYSICAL_FORCE_VERBAL_INSTRUCTION_FLAG                          11629 non-null object\n",
+      "PHYSICAL_FORCE_WEAPON_IMPACT_FLAG                               11629 non-null object\n",
+      "BACKROUND_CIRCUMSTANCES_VIOLENT_CRIME_FLAG                      11629 non-null object\n",
+      "BACKROUND_CIRCUMSTANCES_SUSPECT_KNOWN_TO_CARRY_WEAPON_FLAG      11629 non-null object\n",
+      "SUSPECTS_ACTIONS_CASING_FLAG                                    11629 non-null object\n",
+      "SUSPECTS_ACTIONS_CONCEALED_POSSESSION_WEAPON_FLAG               11629 non-null object\n",
+      "SUSPECTS_ACTIONS_DECRIPTION_FLAG                                11629 non-null object\n",
+      "SUSPECTS_ACTIONS_DRUG_TRANSACTIONS_FLAG                         11629 non-null object\n",
+      "SUSPECTS_ACTIONS_IDENTIFY_CRIME_PATTERN_FLAG                    11629 non-null object\n",
+      "SUSPECTS_ACTIONS_LOOKOUT_FLAG                                   11629 non-null object\n",
+      "SUSPECTS_ACTIONS_OTHER_FLAG                                     11629 non-null object\n",
+      "SUSPECTS_ACTIONS_PROXIMITY_TO_SCENE_FLAG                        11629 non-null object\n",
+      "SEARCH_BASIS_ADMISSION_FLAG                                     11629 non-null object\n",
+      "SEARCH_BASIS_CONSENT_FLAG                                       11629 non-null object\n",
+      "SEARCH_BASIS_HARD_OBJECT_FLAG                                   11629 non-null object\n",
+      "SEARCH_BASIS_INCIDENTAL_TO_ARREST_FLAG                          11629 non-null object\n",
+      "SEARCH_BASIS_OTHER_FLAG                                         11629 non-null object\n",
+      "SEARCH_BASIS_OUTLINE_FLAG                                       11629 non-null object\n",
+      "DEMEANOR_CODE                                                   11629 non-null object\n",
+      "DEMEANOR_OF_PERSON_STOPPED                                      11588 non-null object\n",
+      "SUSPECT_REPORTED_AGE                                            11629 non-null object\n",
+      "SUSPECT_SEX                                                     11629 non-null object\n",
+      "SUSPECT_RACE_DESCRIPTION                                        11629 non-null object\n",
+      "SUSPECT_HEIGHT                                                  11629 non-null object\n",
+      "SUSPECT_WEIGHT                                                  11629 non-null object\n",
+      "SUSPECT_BODY_BUILD_TYPE                                         11629 non-null object\n",
+      "SUSPECT_EYE_COLOR                                               11629 non-null object\n",
+      "SUSPECT_HAIR_COLOR                                              11629 non-null object\n",
+      "SUSPECT_OTHER_DESCRIPTION                                       10607 non-null object\n",
+      "STOP_LOCATION_PRECINCT                                          11629 non-null object\n",
+      "STOP_LOCATION_SECTOR_CODE                                       11629 non-null object\n",
+      "STOP_LOCATION_APARTMENT                                         11604 non-null object\n",
+      "STOP_LOCATION_FULL_ADDRESS                                      11629 non-null object\n",
+      "STOP_LOCATION_PREMISES_NAME                                     11629 non-null object\n",
+      "STOP_LOCATION_STREET_NAME                                       11629 non-null object\n",
+      "STOP_LOCATION_X                                                 11629 non-null object\n",
+      "STOP_LOCATION_Y                                                 11629 non-null object\n",
+      "STOP_LOCATION_ZIP_CODE                                          11629 non-null object\n",
+      "STOP_LOCATION_PATROL_BORO_NAME                                  11629 non-null object\n",
+      "STOP_LOCATION_BORO_NAME                                         11629 non-null object\n",
+      "dtypes: int64(6), object(80)\n",
+      "memory usage: 7.6+ MB\n"
+     ]
+    }
+   ],
+   "source": [
+    "df.info()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "SyntaxError",
+     "evalue": "invalid syntax (<ipython-input-4-71f11347ebfc>, line 1)",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[0;36m  File \u001b[0;32m\"<ipython-input-4-71f11347ebfc>\"\u001b[0;36m, line \u001b[0;32m1\u001b[0m\n\u001b[0;31m    df[]\u001b[0m\n\u001b[0m       ^\u001b[0m\n\u001b[0;31mSyntaxError\u001b[0m\u001b[0;31m:\u001b[0m invalid syntax\n"
+     ]
+    }
+   ],
+   "source": [
+    "df[]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "df.head()"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### Split, Apply, Combine\n",
+    "\n",
+    "Using the `.groupby()` method is a great way to explore patterns within a categorical variable.  The effect of grouping our data based on boro name would allow us to then apply some kind of summary to the individual groups.  The image below demonstrate splitting and applying the mean to each group.  In our data, for example, if we wanted to know the number of complaints by borough, we could groupby the boro name and select a relevant column to count.  \n",
+    "![](images/sac.png)\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "df.groupby('STOP_LOCATION_BORO_NAME')['FRISKED_FLAG'].count()"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "Usually, we can readily plot the results of the `.groupby()` tacking a plot method onto the end. For example, it would make sense to look at a barplot of the results of our above count."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "df.groupby('STOP_LOCATION_BORO_NAME')['FRISKED_FLAG'].count().plot(kind = 'bar', color = 'blue', title = 'Count of Frisks by Borough', figsize = (10, 5))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "df.groupby('STOP_LOCATION_BORO_NAME')[['SEARCHED_FLAG','FRISKED_FLAG']].count().plot(kind = 'bar', color = ['blue', 'red'], title = 'Count of Frisks by Borough', figsize = (10, 5))"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Filtering Data\n",
+    "\n",
+    "Now, we see that there are some values we may want to exclude in order to get a plot of the typical five boroughs.  To do so, we would filter the data to only have values in the borough name column to `BRONX, BROOKLYN, MANHATTAN, QUEENS, STATEN IS`."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "five_boroughs = df[(df['STOP_LOCATION_BORO_NAME'] == 'MANHATTAN') | (df['STOP_LOCATION_BORO_NAME'] == 'BRONX') | (df['STOP_LOCATION_BORO_NAME'] == 'BROOKLYN') | (df['STOP_LOCATION_BORO_NAME'] == 'STATEN IS') | (df['STOP_LOCATION_BORO_NAME'] ==  'QUEENS')]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "five_boroughs.STOP_LOCATION_BORO_NAME.value_counts()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "five_boroughs.groupby('STOP_LOCATION_BORO_NAME')['FRISKED_FLAG'].count().plot(kind = 'bar', color = 'blue', title = 'Count of Frisks by Borough', figsize = (10, 5))"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "We don't have many quantitative columns, but we can examine the stop duration column; and use the results to filter information based on \"normal\" stop times."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "df['OBSERVED_DURATION_MINUTES'].describe()"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "It looks like 75% of our data is near 2 minutes.  We also see that there was a stop that seems to have lasted 99999 minutes.  I'm going to drop any stop that lasted more than two hours, and see how many we've eliminated.  To do so, we will check the shape of our original dataframe and compare it to that after the filter."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "df.shape"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "df[df['OBSERVED_DURATION_MINUTES'] <= 120].shape"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "11629 - 11521"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "108/11629"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "trimmed_time = df[df['OBSERVED_DURATION_MINUTES'] <= 120]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "trimmed_time['OBSERVED_DURATION_MINUTES'].hist()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "trimmed_time['OBSERVED_DURATION_MINUTES'].plot(kind = 'box')"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### PROBLEMS\n",
+    "\n",
+    "1. Explore the data based on the race feature.  Determine how many individuals from each reported category were frisked citywide, and then per each borough.\n",
+    "\n",
+    "2. Explore the `STOP_DURATION_MINUTES` feature.  Remove any outliers, and describe the distribution of values including a visualization.\n",
+    "\n",
+    "3. Explore some variables by the Gender feature.  How many frisks were of non-male suspects versus male?\n",
+    "\n",
+    "4. What percentage of stops were black males ages 18 - 35?  \n",
+    "\n",
+    "5. Describe the overall use of physical force in the stops.  These are the columns:\n",
+    "\n",
+    "```\n",
+    "PHYSICAL_FORCE_CEW_FLAG                                         11629 non-null object\n",
+    "PHYSICAL_FORCE_DRAW_POINT_FIREARM_FLAG                          11629 non-null object\n",
+    "PHYSICAL_FORCE_HANDCUFF_SUSPECT_FLAG                            11629 non-null object\n",
+    "PHYSICAL_FORCE_OC_SPRAY_USED_FLAG                               11629 non-null object\n",
+    "PHYSICAL_FORCE_OTHER_FLAG                                       11629 non-null object\n",
+    "PHYSICAL_FORCE_RESTRAINT_USED_FLAG                              11629 non-null object\n",
+    "PHYSICAL_FORCE_VERBAL_INSTRUCTION_FLAG                          11629 non-null object\n",
+    "PHYSICAL_FORCE_WEAPON_IMPACT_FLAG                               11629 non-null object\n",
+    "```\n",
+    "\n",
+    "6. What can you say about the `SUSPECT_ARREST_OFFENSE` column?  Were most people stopped arrested?  Were the rates across races similar?\n",
+    "\n",
+    "7. Identify a publication that used this data to investigate a specific area of interest, or a full summary like the RAND report.  Here is a list of information about relevant studies:\n",
+    "\n",
+    "https://www.icpsr.umich.edu/icpsrweb/NACJD/studies/21660/publications\n",
+    "\n",
+    "Describe the questions your report sought to answer.  Do you think you can use the data to replicate any of the analysis?  Try it!"
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.6.6"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 2
+}

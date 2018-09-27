@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="898a6560-06b7-4d61-86a7-18ab39481a9b" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change beforePath="$PROJECT_DIR$/README.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Small/1/TNS_Logo1_Small_CMYK.ai" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Small/1/TNS_Logo1_Small_CMYK.eps" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Small/1/TNS_Logo1_Small_RGB.ai" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Small/1/TNS_Logo1_Small_RGB.eps" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Small/1/TNS_Logo1_Small_RGB.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Small/3/TNS_Logo3_Small_CMYK.ai" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Small/3/TNS_Logo3_Small_CMYK.eps" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Small/3/TNS_Logo3_Small_RGB.ai" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Small/3/TNS_Logo3_Small_RGB.eps" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Small/3/TNS_Logo3_Small_RGB.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/__MACOSX/._Small" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/__MACOSX/Small/._.DS_Store" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/__MACOSX/Small/._1" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/__MACOSX/Small/._3" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/__MACOSX/Small/1/._.DS_Store" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/__MACOSX/Small/1/._TNS_Logo1_Small_CMYK.ai" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/__MACOSX/Small/1/._TNS_Logo1_Small_CMYK.eps" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/__MACOSX/Small/1/._TNS_Logo1_Small_RGB.ai" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/__MACOSX/Small/1/._TNS_Logo1_Small_RGB.eps" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/__MACOSX/Small/1/._TNS_Logo1_Small_RGB.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/__MACOSX/Small/3/._.DS_Store" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/__MACOSX/Small/3/._TNS_Logo3_Small_CMYK.ai" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/__MACOSX/Small/3/._TNS_Logo3_Small_CMYK.eps" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/__MACOSX/Small/3/._TNS_Logo3_Small_RGB.ai" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/__MACOSX/Small/3/._TNS_Logo3_Small_RGB.eps" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/__MACOSX/Small/3/._TNS_Logo3_Small_RGB.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/201306-citibike-tripdata.zip" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/sqf-2017.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/images/Small/1/TNS_Logo1_Small_CMYK.ai" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/images/Small/1/TNS_Logo1_Small_CMYK.eps" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/images/Small/1/TNS_Logo1_Small_RGB.ai" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/images/Small/1/TNS_Logo1_Small_RGB.eps" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/images/Small/3/TNS_Logo3_Small_CMYK.ai" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/images/Small/3/TNS_Logo3_Small_CMYK.eps" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/images/Small/3/TNS_Logo3_Small_RGB.ai" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/images/Small/3/TNS_Logo3_Small_RGB.eps" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/images/Small/3/TNS_Logo3_Small_RGB.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/images/TNS_Logo1_Small_RGB.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/syllabus.ipynb" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/syllabus.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/week1/.ipynb_checkpoints/01-Introduction-Installations-checkpoint.ipynb" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/week1/.ipynb_checkpoints/02-Intro-to-Data-checkpoint.ipynb" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/week1/.ipynb_checkpoints/03-UNIX-and-Terminal-checkpoint.ipynb" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/week1/.ipynb_checkpoints/04-Introduction-to-Python-checkpoint.ipynb" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/week1/.ipynb_checkpoints/05-Exploring-with-Pandas-checkpoint.ipynb" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/week1/.ipynb_checkpoints/06-Pandas-and-Matplotlib-checkpoint.ipynb" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/week1/.ipynb_checkpoints/bkplainers-checkpoint.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/week1/01-Introduction-Installations.ipynb" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/week1/02-Intro-to-Data.ipynb" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/week1/03-UNIX-and-Terminal.ipynb" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/week1/04-Introduction-to-Python.ipynb" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/week1/05-Exploring-with-Pandas.ipynb" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/week1/06-Pandas-and-Matplotlib.ipynb" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/week1/bkplainers.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/week2/.ipynb_checkpoints/Folium-checkpoint.ipynb" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/week2/.ipynb_checkpoints/Untitled-checkpoint.ipynb" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/week2/.ipynb_checkpoints/index_map-checkpoint.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/week2/.ipynb_checkpoints/lab_01-checkpoint.ipynb" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/week2/.ipynb_checkpoints/policin-checkpoint.ipynb" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/week2/Folium.ipynb" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/week2/Untitled.ipynb" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/week2/data/Country.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/week2/data/game_google.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/week2/images/folium.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/week2/images/nypd.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/week2/images/sac.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/week2/index_map.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/week2/lab_01.ipynb" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/week2/policin.ipynb" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/week3/.ipynb_checkpoints/Folium-checkpoint.ipynb" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/week3/500_Cities__Census_Tract-level_Data__GIS_Friendly_Format___2017_release_.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/week3/Folium.ipynb" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/week3/healthmap.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/week3/images/folium.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/week3/index_map.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/week3/tookit_lect_9.12.pdf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/week4/01-gapminder-probs.ipynb" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/week4/01-gapminder-solns.ipynb" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/week4/03-Beautiful-Soup-Scraping.ipynb" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/week4/03-Intro-Spacy.ipynb" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/week4/gap_data/gapminder_all.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/week4/gap_data/gapminder_gdp_africa.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/week4/gap_data/gapminder_gdp_americas.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/week4/gap_data/gapminder_gdp_asia.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/week4/gap_data/gapminder_gdp_europe.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/week4/gap_data/gapminder_gdp_oceania.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/week4/images/open_table.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/week4/images/reddit.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/week4/images/spacy_pipeline.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/week4/images/wiki_table.png" afterPath="" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="conf.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/conf.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="495">
+              <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="37" selection-end-column="53" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.rst" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/source/index.rst">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="525">
+              <caret line="35" column="25" lean-forward="false" selection-start-line="35" selection-start-column="25" selection-end-line="35" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/source/conf.py" />
+        <option value="$PROJECT_DIR$/source/index.rst" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="1440" />
+    <option name="height" value="823" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="code_toolkit" type="b2602c69:ProjectViewProjectNode" />
+              <item name="code_toolkit" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="code_toolkit" type="b2602c69:ProjectViewProjectNode" />
+              <item name="code_toolkit" type="462c0819:PsiDirectoryNode" />
+              <item name="source" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="898a6560-06b7-4d61-86a7-18ab39481a9b" name="Default" comment="" />
+      <created>1538019271260</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1538019271260</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="1440" height="823" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/source/conf.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="37" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/index.rst">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="35" column="25" lean-forward="false" selection-start-line="35" selection-start-column="25" selection-end-line="35" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

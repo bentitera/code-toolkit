@@ -1,0 +1,2887 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Review &#8212; Code Toolkit 0.0.1 documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  
+<style>
+/* CSS for nbsphinx extension */
+
+/* remove conflicting styling from Sphinx themes */
+div.nbinput,
+div.nbinput div.prompt,
+div.nbinput div.input_area,
+div.nbinput div[class*=highlight],
+div.nbinput div[class*=highlight] pre,
+div.nboutput,
+div.nbinput div.prompt,
+div.nbinput div.output_area,
+div.nboutput div[class*=highlight],
+div.nboutput div[class*=highlight] pre {
+    background: none;
+    border: none;
+    padding: 0 0;
+    margin: 0;
+    box-shadow: none;
+}
+
+/* avoid gaps between output lines */
+div.nboutput div[class*=highlight] pre {
+    line-height: normal;
+}
+
+/* input/output containers */
+div.nbinput,
+div.nboutput {
+    display: -webkit-flex;
+    display: flex;
+    align-items: flex-start;
+    margin: 0;
+    width: 100%;
+}
+@media (max-width: 540px) {
+    div.nbinput,
+    div.nboutput {
+        flex-direction: column;
+    }
+}
+
+/* input container */
+div.nbinput {
+    padding-top: 5px;
+}
+
+/* last container */
+div.nblast {
+    padding-bottom: 5px;
+}
+
+/* input prompt */
+div.nbinput div.prompt pre {
+    color: #303F9F;
+}
+
+/* output prompt */
+div.nboutput div.prompt pre {
+    color: #D84315;
+}
+
+/* all prompts */
+div.nbinput div.prompt,
+div.nboutput div.prompt {
+    min-width: 8ex;
+    padding-top: 0.4em;
+    padding-right: 0.4em;
+    text-align: right;
+    flex: 0;
+}
+@media (max-width: 540px) {
+    div.nbinput div.prompt,
+    div.nboutput div.prompt {
+        text-align: left;
+        padding: 0.4em;
+    }
+    div.nboutput div.prompt.empty {
+        padding: 0;
+    }
+}
+
+/* disable scrollbars on prompts */
+div.nbinput div.prompt pre,
+div.nboutput div.prompt pre {
+    overflow: hidden;
+}
+
+/* input/output area */
+div.nbinput div.input_area,
+div.nboutput div.output_area {
+    padding: 0.4em;
+    -webkit-flex: 1;
+    flex: 1;
+    overflow: auto;
+}
+@media (max-width: 540px) {
+    div.nbinput div.input_area,
+    div.nboutput div.output_area {
+        width: 100%;
+    }
+}
+
+/* input area */
+div.nbinput div.input_area {
+    border: 1px solid #cfcfcf;
+    border-radius: 2px;
+    background: #f7f7f7;
+}
+
+/* override MathJax center alignment in output cells */
+div.nboutput div[class*=MathJax] {
+    text-align: left !important;
+}
+
+/* override sphinx.ext.pngmath center alignment in output cells */
+div.nboutput div.math p {
+    text-align: left;
+}
+
+/* standard error */
+div.nboutput div.output_area.stderr {
+    background: #fdd;
+}
+
+/* ANSI colors */
+.ansi-black-fg { color: #3E424D; }
+.ansi-black-bg { background-color: #3E424D; }
+.ansi-black-intense-fg { color: #282C36; }
+.ansi-black-intense-bg { background-color: #282C36; }
+.ansi-red-fg { color: #E75C58; }
+.ansi-red-bg { background-color: #E75C58; }
+.ansi-red-intense-fg { color: #B22B31; }
+.ansi-red-intense-bg { background-color: #B22B31; }
+.ansi-green-fg { color: #00A250; }
+.ansi-green-bg { background-color: #00A250; }
+.ansi-green-intense-fg { color: #007427; }
+.ansi-green-intense-bg { background-color: #007427; }
+.ansi-yellow-fg { color: #DDB62B; }
+.ansi-yellow-bg { background-color: #DDB62B; }
+.ansi-yellow-intense-fg { color: #B27D12; }
+.ansi-yellow-intense-bg { background-color: #B27D12; }
+.ansi-blue-fg { color: #208FFB; }
+.ansi-blue-bg { background-color: #208FFB; }
+.ansi-blue-intense-fg { color: #0065CA; }
+.ansi-blue-intense-bg { background-color: #0065CA; }
+.ansi-magenta-fg { color: #D160C4; }
+.ansi-magenta-bg { background-color: #D160C4; }
+.ansi-magenta-intense-fg { color: #A03196; }
+.ansi-magenta-intense-bg { background-color: #A03196; }
+.ansi-cyan-fg { color: #60C6C8; }
+.ansi-cyan-bg { background-color: #60C6C8; }
+.ansi-cyan-intense-fg { color: #258F8F; }
+.ansi-cyan-intense-bg { background-color: #258F8F; }
+.ansi-white-fg { color: #C5C1B4; }
+.ansi-white-bg { background-color: #C5C1B4; }
+.ansi-white-intense-fg { color: #A1A6B2; }
+.ansi-white-intense-bg { background-color: #A1A6B2; }
+
+.ansi-default-inverse-fg { color: #FFFFFF; }
+.ansi-default-inverse-bg { background-color: #000000; }
+
+.ansi-bold { font-weight: bold; }
+.ansi-underline { text-decoration: underline; }
+</style>
+<div class="section" id="Review">
+<h1>Review<a class="headerlink" href="#Review" title="Permalink to this headline">¶</a></h1>
+<ol class="arabic simple">
+<li>Import <code class="docutils literal"><span class="pre">pandas</span></code> and load in the file called
+<code class="docutils literal"><span class="pre">gapminder_gdp_oceania.csv</span></code></li>
+</ol>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none"><div class="highlight"><pre>
+<span></span>In [2]:
+</pre></div>
+</div>
+<div class="input_area highlight-bash"><div class="highlight"><pre>
+<span></span>%%bash
+ls data/gap_data -F
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="stderr output_area docutils container">
+<div class="highlight"><pre>
+ls: -F: No such file or directory
+ls: data/gap_data: No such file or directory
+</pre></div></div>
+</div>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none"><div class="highlight"><pre>
+<span></span>In [4]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3"><div class="highlight"><pre>
+<span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;gap_data/gapminder_gdp_oceania.csv&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none"><div class="highlight"><pre>
+<span></span>In [5]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3"><div class="highlight"><pre>
+<span></span><span class="n">df</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
+RangeIndex: 2 entries, 0 to 1
+Data columns (total 13 columns):
+country           2 non-null object
+gdpPercap_1952    2 non-null float64
+gdpPercap_1957    2 non-null float64
+gdpPercap_1962    2 non-null float64
+gdpPercap_1967    2 non-null float64
+gdpPercap_1972    2 non-null float64
+gdpPercap_1977    2 non-null float64
+gdpPercap_1982    2 non-null float64
+gdpPercap_1987    2 non-null float64
+gdpPercap_1992    2 non-null float64
+gdpPercap_1997    2 non-null float64
+gdpPercap_2002    2 non-null float64
+gdpPercap_2007    2 non-null float64
+dtypes: float64(12), object(1)
+memory usage: 288.0+ bytes
+</pre></div></div>
+</div>
+<ol class="arabic simple">
+<li>Re-import the data, this time setting the <code class="docutils literal"><span class="pre">index_col</span></code> argument to
+the <code class="docutils literal"><span class="pre">country</span></code> variable.</li>
+</ol>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none"><div class="highlight"><pre>
+<span></span>In [6]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3"><div class="highlight"><pre>
+<span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;gap_data/gapminder_gdp_oceania.csv&#39;</span><span class="p">,</span> <span class="n">index_col</span><span class="o">=</span><span class="s1">&#39;country&#39;</span><span class="p">)</span>
+<span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none"><div class="highlight"><pre>
+<span></span>Out[6]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>gdpPercap_1952</th>
+      <th>gdpPercap_1957</th>
+      <th>gdpPercap_1962</th>
+      <th>gdpPercap_1967</th>
+      <th>gdpPercap_1972</th>
+      <th>gdpPercap_1977</th>
+      <th>gdpPercap_1982</th>
+      <th>gdpPercap_1987</th>
+      <th>gdpPercap_1992</th>
+      <th>gdpPercap_1997</th>
+      <th>gdpPercap_2002</th>
+      <th>gdpPercap_2007</th>
+    </tr>
+    <tr>
+      <th>country</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Australia</th>
+      <td>10039.59564</td>
+      <td>10949.64959</td>
+      <td>12217.22686</td>
+      <td>14526.12465</td>
+      <td>16788.62948</td>
+      <td>18334.19751</td>
+      <td>19477.00928</td>
+      <td>21888.88903</td>
+      <td>23424.76683</td>
+      <td>26997.93657</td>
+      <td>30687.75473</td>
+      <td>34435.36744</td>
+    </tr>
+    <tr>
+      <th>New Zealand</th>
+      <td>10556.57566</td>
+      <td>12247.39532</td>
+      <td>13175.67800</td>
+      <td>14463.91893</td>
+      <td>16046.03728</td>
+      <td>16233.71770</td>
+      <td>17632.41040</td>
+      <td>19007.19129</td>
+      <td>18363.32494</td>
+      <td>21050.41377</td>
+      <td>23189.80135</td>
+      <td>25185.00911</td>
+    </tr>
+  </tbody>
+</table>
+</div></div>
+</div>
+<ol class="arabic simple">
+<li>Describe the variables and datatypes</li>
+</ol>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none"><div class="highlight"><pre>
+<span></span>In [7]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3"><div class="highlight"><pre>
+<span></span><span class="n">df</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
+Index: 2 entries, Australia to New Zealand
+Data columns (total 12 columns):
+gdpPercap_1952    2 non-null float64
+gdpPercap_1957    2 non-null float64
+gdpPercap_1962    2 non-null float64
+gdpPercap_1967    2 non-null float64
+gdpPercap_1972    2 non-null float64
+gdpPercap_1977    2 non-null float64
+gdpPercap_1982    2 non-null float64
+gdpPercap_1987    2 non-null float64
+gdpPercap_1992    2 non-null float64
+gdpPercap_1997    2 non-null float64
+gdpPercap_2002    2 non-null float64
+gdpPercap_2007    2 non-null float64
+dtypes: float64(12)
+memory usage: 208.0+ bytes
+</pre></div></div>
+</div>
+<ul class="simple">
+<li>Do the same for the file <code class="docutils literal"><span class="pre">gapminder_gdp_americas.csv</span></code></li>
+</ul>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none"><div class="highlight"><pre>
+<span></span>In [10]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3"><div class="highlight"><pre>
+<span></span><span class="n">df_a</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;gap_data/gapminder_gdp_americas.csv&#39;</span><span class="p">,</span> <span class="n">index_col</span><span class="o">=</span> <span class="s1">&#39;country&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none"><div class="highlight"><pre>
+<span></span>In [11]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3"><div class="highlight"><pre>
+<span></span><span class="n">df_a</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none"><div class="highlight"><pre>
+<span></span>Out[11]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>continent</th>
+      <th>gdpPercap_1952</th>
+      <th>gdpPercap_1957</th>
+      <th>gdpPercap_1962</th>
+      <th>gdpPercap_1967</th>
+      <th>gdpPercap_1972</th>
+      <th>gdpPercap_1977</th>
+      <th>gdpPercap_1982</th>
+      <th>gdpPercap_1987</th>
+      <th>gdpPercap_1992</th>
+      <th>gdpPercap_1997</th>
+      <th>gdpPercap_2002</th>
+      <th>gdpPercap_2007</th>
+    </tr>
+    <tr>
+      <th>country</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Argentina</th>
+      <td>Americas</td>
+      <td>5911.315053</td>
+      <td>6856.856212</td>
+      <td>7133.166023</td>
+      <td>8052.953021</td>
+      <td>9443.038526</td>
+      <td>10079.026740</td>
+      <td>8997.897412</td>
+      <td>9139.671389</td>
+      <td>9308.418710</td>
+      <td>10967.281950</td>
+      <td>8797.640716</td>
+      <td>12779.379640</td>
+    </tr>
+    <tr>
+      <th>Bolivia</th>
+      <td>Americas</td>
+      <td>2677.326347</td>
+      <td>2127.686326</td>
+      <td>2180.972546</td>
+      <td>2586.886053</td>
+      <td>2980.331339</td>
+      <td>3548.097832</td>
+      <td>3156.510452</td>
+      <td>2753.691490</td>
+      <td>2961.699694</td>
+      <td>3326.143191</td>
+      <td>3413.262690</td>
+      <td>3822.137084</td>
+    </tr>
+    <tr>
+      <th>Brazil</th>
+      <td>Americas</td>
+      <td>2108.944355</td>
+      <td>2487.365989</td>
+      <td>3336.585802</td>
+      <td>3429.864357</td>
+      <td>4985.711467</td>
+      <td>6660.118654</td>
+      <td>7030.835878</td>
+      <td>7807.095818</td>
+      <td>6950.283021</td>
+      <td>7957.980824</td>
+      <td>8131.212843</td>
+      <td>9065.800825</td>
+    </tr>
+    <tr>
+      <th>Canada</th>
+      <td>Americas</td>
+      <td>11367.161120</td>
+      <td>12489.950060</td>
+      <td>13462.485550</td>
+      <td>16076.588030</td>
+      <td>18970.570860</td>
+      <td>22090.883060</td>
+      <td>22898.792140</td>
+      <td>26626.515030</td>
+      <td>26342.884260</td>
+      <td>28954.925890</td>
+      <td>33328.965070</td>
+      <td>36319.235010</td>
+    </tr>
+    <tr>
+      <th>Chile</th>
+      <td>Americas</td>
+      <td>3939.978789</td>
+      <td>4315.622723</td>
+      <td>4519.094331</td>
+      <td>5106.654313</td>
+      <td>5494.024437</td>
+      <td>4756.763836</td>
+      <td>5095.665738</td>
+      <td>5547.063754</td>
+      <td>7596.125964</td>
+      <td>10118.053180</td>
+      <td>10778.783850</td>
+      <td>13171.638850</td>
+    </tr>
+  </tbody>
+</table>
+</div></div>
+</div>
+<ul class="simple">
+<li>Use <code class="docutils literal"><span class="pre">.iloc</span></code> to select the object in the <code class="docutils literal"><span class="pre">[0,</span> <span class="pre">0]</span></code> position. What
+does this value correspond to?</li>
+</ul>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none"><div class="highlight"><pre>
+<span></span>In [12]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3"><div class="highlight"><pre>
+<span></span><span class="n">df_a</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none"><div class="highlight"><pre>
+<span></span>Out[12]:
+</pre></div>
+</div>
+<div class="output_area highlight-none"><div class="highlight"><pre>
+<span></span>&#39;Americas&#39;
+</pre></div>
+</div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none"><div class="highlight"><pre>
+<span></span>In [13]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3"><div class="highlight"><pre>
+<span></span><span class="n">df_a</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">5</span><span class="p">,</span> <span class="mi">0</span><span class="p">:</span><span class="mi">2</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none"><div class="highlight"><pre>
+<span></span>Out[13]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>continent</th>
+      <th>gdpPercap_1952</th>
+    </tr>
+    <tr>
+      <th>country</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Argentina</th>
+      <td>Americas</td>
+      <td>5911.315053</td>
+    </tr>
+    <tr>
+      <th>Bolivia</th>
+      <td>Americas</td>
+      <td>2677.326347</td>
+    </tr>
+    <tr>
+      <th>Brazil</th>
+      <td>Americas</td>
+      <td>2108.944355</td>
+    </tr>
+    <tr>
+      <th>Canada</th>
+      <td>Americas</td>
+      <td>11367.161120</td>
+    </tr>
+    <tr>
+      <th>Chile</th>
+      <td>Americas</td>
+      <td>3939.978789</td>
+    </tr>
+  </tbody>
+</table>
+</div></div>
+</div>
+<ul class="simple">
+<li>Use <code class="docutils literal"><span class="pre">.loc</span></code> to select all rows containing the variable <code class="docutils literal"><span class="pre">Albania</span></code></li>
+</ul>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none"><div class="highlight"><pre>
+<span></span>In [15]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3"><div class="highlight"><pre>
+<span></span><span class="n">df_euro</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;gap_data/gapminder_gdp_europe.csv&#39;</span><span class="p">,</span> <span class="n">index_col</span><span class="o">=</span><span class="s1">&#39;country&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none"><div class="highlight"><pre>
+<span></span>In [16]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3"><div class="highlight"><pre>
+<span></span><span class="n">df_euro</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="s1">&#39;Albania&#39;</span><span class="p">,</span> <span class="p">:]</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none"><div class="highlight"><pre>
+<span></span>Out[16]:
+</pre></div>
+</div>
+<div class="output_area highlight-none"><div class="highlight"><pre>
+<span></span>gdpPercap_1952    1601.056136
+gdpPercap_1957    1942.284244
+gdpPercap_1962    2312.888958
+gdpPercap_1967    2760.196931
+gdpPercap_1972    3313.422188
+gdpPercap_1977    3533.003910
+gdpPercap_1982    3630.880722
+gdpPercap_1987    3738.932735
+gdpPercap_1992    2497.437901
+gdpPercap_1997    3193.054604
+gdpPercap_2002    4604.211737
+gdpPercap_2007    5937.029526
+Name: Albania, dtype: float64
+</pre></div>
+</div>
+</div>
+<ul class="simple">
+<li>Use <code class="docutils literal"><span class="pre">.loc</span></code> to select all columns for the variable
+<code class="docutils literal"><span class="pre">gdpPercap_1952</span></code></li>
+</ul>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none"><div class="highlight"><pre>
+<span></span>In [23]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3"><div class="highlight"><pre>
+<span></span><span class="n">df_euro</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="s1">&#39;Albania&#39;</span><span class="p">:</span><span class="s1">&#39;Germany&#39;</span><span class="p">,</span> <span class="s1">&#39;gdpPercap_1952&#39;</span><span class="p">]</span>
+<span class="c1">#df_euro.gdpPercap_1952</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none"><div class="highlight"><pre>
+<span></span>Out[23]:
+</pre></div>
+</div>
+<div class="output_area highlight-none"><div class="highlight"><pre>
+<span></span>country
+Albania                   1601.056136
+Austria                   6137.076492
+Belgium                   8343.105127
+Bosnia and Herzegovina     973.533195
+Bulgaria                  2444.286648
+Croatia                   3119.236520
+Czech Republic            6876.140250
+Denmark                   9692.385245
+Finland                   6424.519071
+France                    7029.809327
+Germany                   7144.114393
+Name: gdpPercap_1952, dtype: float64
+</pre></div>
+</div>
+</div>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none"><div class="highlight"><pre>
+<span></span>In [ ]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3"><div class="highlight"><pre>
+<span></span><span class="n">df</span><span class="p">[[</span><span class="s1">&#39;&#39;</span><span class="p">]]</span>
+</pre></div>
+</div>
+</div>
+<ul class="simple">
+<li>What does the following line of code do to the dataframe <code class="docutils literal"><span class="pre">data</span></code>:</li>
+</ul>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="k">print</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="s1">&#39;Italy&#39;</span><span class="p">:</span><span class="s1">&#39;Poland&#39;</span><span class="p">,</span> <span class="s1">&#39;gdpPercap_1962&#39;</span><span class="p">:</span><span class="s1">&#39;gdpPercap_1972&#39;</span><span class="p">])</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li>Use the results of the above code and apply the <code class="docutils literal"><span class="pre">max()</span></code> method to
+the slice.</li>
+</ul>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none"><div class="highlight"><pre>
+<span></span>In [24]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3"><div class="highlight"><pre>
+<span></span><span class="n">df_euro</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="s1">&#39;Italy&#39;</span><span class="p">:</span><span class="s1">&#39;Poland&#39;</span><span class="p">,</span> <span class="s1">&#39;gdpPercap_1962&#39;</span><span class="p">:</span><span class="s1">&#39;gdpPercap_1972&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">max</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none"><div class="highlight"><pre>
+<span></span>Out[24]:
+</pre></div>
+</div>
+<div class="output_area highlight-none"><div class="highlight"><pre>
+<span></span>gdpPercap_1962    13450.40151
+gdpPercap_1967    16361.87647
+gdpPercap_1972    18965.05551
+dtype: float64
+</pre></div>
+</div>
+</div>
+<ul class="simple">
+<li>Select the rows of the dataframe where the variable
+<code class="docutils literal"><span class="pre">gdpPercap_1972</span></code> is greater than 13,000. How many countries are
+there?</li>
+</ul>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none"><div class="highlight"><pre>
+<span></span>In [25]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3"><div class="highlight"><pre>
+<span></span><span class="n">df_euro</span><span class="p">[</span><span class="n">df_euro</span><span class="p">[</span><span class="s1">&#39;gdpPercap_1972&#39;</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">13000</span><span class="p">]</span><span class="o">.</span><span class="n">count</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none"><div class="highlight"><pre>
+<span></span>Out[25]:
+</pre></div>
+</div>
+<div class="output_area highlight-none"><div class="highlight"><pre>
+<span></span>gdpPercap_1952    13
+gdpPercap_1957    13
+gdpPercap_1962    13
+gdpPercap_1967    13
+gdpPercap_1972    13
+gdpPercap_1977    13
+gdpPercap_1982    13
+gdpPercap_1987    13
+gdpPercap_1992    13
+gdpPercap_1997    13
+gdpPercap_2002    13
+gdpPercap_2007    13
+dtype: int64
+</pre></div>
+</div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none"><div class="highlight"><pre>
+<span></span>In [17]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3"><div class="highlight"><pre>
+<span></span><span class="n">df_euro</span><span class="p">[</span><span class="s1">&#39;gdpPercap_1972&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">nlargest</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none"><div class="highlight"><pre>
+<span></span>Out[17]:
+</pre></div>
+</div>
+<div class="output_area highlight-none"><div class="highlight"><pre>
+<span></span>country
+Switzerland    27195.11304
+Norway         18965.05551
+Denmark        18866.20721
+Netherlands    18794.74567
+Germany        18016.18027
+Name: gdpPercap_1972, dtype: float64
+</pre></div>
+</div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none"><div class="highlight"><pre>
+<span></span>In [18]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3"><div class="highlight"><pre>
+<span></span><span class="n">df_euro</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
+Index: 30 entries, Albania to United Kingdom
+Data columns (total 12 columns):
+gdpPercap_1952    30 non-null float64
+gdpPercap_1957    30 non-null float64
+gdpPercap_1962    30 non-null float64
+gdpPercap_1967    30 non-null float64
+gdpPercap_1972    30 non-null float64
+gdpPercap_1977    30 non-null float64
+gdpPercap_1982    30 non-null float64
+gdpPercap_1987    30 non-null float64
+gdpPercap_1992    30 non-null float64
+gdpPercap_1997    30 non-null float64
+gdpPercap_2002    30 non-null float64
+gdpPercap_2007    30 non-null float64
+dtypes: float64(12)
+memory usage: 4.3+ KB
+</pre></div></div>
+</div>
+<ul class="simple">
+<li>Are there any missing values? Where?</li>
+</ul>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none"><div class="highlight"><pre>
+<span></span>In [27]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3"><div class="highlight"><pre>
+<span></span><span class="n">df_euro</span><span class="o">.</span><span class="n">isnull</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none"><div class="highlight"><pre>
+<span></span>Out[27]:
+</pre></div>
+</div>
+<div class="output_area highlight-none"><div class="highlight"><pre>
+<span></span>gdpPercap_1952    0
+gdpPercap_1957    0
+gdpPercap_1962    0
+gdpPercap_1967    0
+gdpPercap_1972    0
+gdpPercap_1977    0
+gdpPercap_1982    0
+gdpPercap_1987    0
+gdpPercap_1992    0
+gdpPercap_1997    0
+gdpPercap_2002    0
+gdpPercap_2007    0
+dtype: int64
+</pre></div>
+</div>
+</div>
+<ul class="simple">
+<li>What does the following line of code do?</li>
+</ul>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">mask_higher</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span><span class="n">x</span><span class="o">&gt;</span><span class="n">x</span><span class="o">.</span><span class="n">mean</span><span class="p">())</span>
+</pre></div>
+</div>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none"><div class="highlight"><pre>
+<span></span>In [19]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3"><div class="highlight"><pre>
+<span></span><span class="n">mask_higher</span> <span class="o">=</span> <span class="n">df_euro</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span><span class="n">x</span><span class="o">&gt;</span><span class="n">x</span><span class="o">.</span><span class="n">mean</span><span class="p">())</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none"><div class="highlight"><pre>
+<span></span>In [20]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3"><div class="highlight"><pre>
+<span></span><span class="n">mask_higher</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none"><div class="highlight"><pre>
+<span></span>Out[20]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>gdpPercap_1952</th>
+      <th>gdpPercap_1957</th>
+      <th>gdpPercap_1962</th>
+      <th>gdpPercap_1967</th>
+      <th>gdpPercap_1972</th>
+      <th>gdpPercap_1977</th>
+      <th>gdpPercap_1982</th>
+      <th>gdpPercap_1987</th>
+      <th>gdpPercap_1992</th>
+      <th>gdpPercap_1997</th>
+      <th>gdpPercap_2002</th>
+      <th>gdpPercap_2007</th>
+    </tr>
+    <tr>
+      <th>country</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Albania</th>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>Austria</th>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>Belgium</th>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>Bosnia and Herzegovina</th>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>Bulgaria</th>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+  </tbody>
+</table>
+</div></div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none"><div class="highlight"><pre>
+<span></span>In [32]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3"><div class="highlight"><pre>
+<span></span><span class="n">mask_higher</span> <span class="o">=</span> <span class="n">df_euro</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span><span class="n">x</span><span class="o">&gt;</span><span class="n">x</span><span class="o">.</span><span class="n">mean</span><span class="p">())</span>
+<span class="n">df_euro</span><span class="p">[</span><span class="n">mask_higher</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none"><div class="highlight"><pre>
+<span></span>Out[32]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>gdpPercap_1952</th>
+      <th>gdpPercap_1957</th>
+      <th>gdpPercap_1962</th>
+      <th>gdpPercap_1967</th>
+      <th>gdpPercap_1972</th>
+      <th>gdpPercap_1977</th>
+      <th>gdpPercap_1982</th>
+      <th>gdpPercap_1987</th>
+      <th>gdpPercap_1992</th>
+      <th>gdpPercap_1997</th>
+      <th>gdpPercap_2002</th>
+      <th>gdpPercap_2007</th>
+    </tr>
+    <tr>
+      <th>country</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Albania</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>Austria</th>
+      <td>6137.076492</td>
+      <td>8842.598030</td>
+      <td>10750.721110</td>
+      <td>12834.60240</td>
+      <td>16661.62560</td>
+      <td>19749.42230</td>
+      <td>21597.08362</td>
+      <td>23687.82607</td>
+      <td>27042.01868</td>
+      <td>29095.92066</td>
+      <td>32417.60769</td>
+      <td>36126.49270</td>
+    </tr>
+    <tr>
+      <th>Belgium</th>
+      <td>8343.105127</td>
+      <td>9714.960623</td>
+      <td>10991.206760</td>
+      <td>13149.04119</td>
+      <td>16672.14356</td>
+      <td>19117.97448</td>
+      <td>20979.84589</td>
+      <td>22525.56308</td>
+      <td>25575.57069</td>
+      <td>27561.19663</td>
+      <td>30485.88375</td>
+      <td>33692.60508</td>
+    </tr>
+    <tr>
+      <th>Bosnia and Herzegovina</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>Bulgaria</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>Croatia</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>Czech Republic</th>
+      <td>6876.140250</td>
+      <td>8256.343918</td>
+      <td>10136.867130</td>
+      <td>11399.44489</td>
+      <td>13108.45360</td>
+      <td>14800.16062</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>Denmark</th>
+      <td>9692.385245</td>
+      <td>11099.659350</td>
+      <td>13583.313510</td>
+      <td>15937.21123</td>
+      <td>18866.20721</td>
+      <td>20422.90150</td>
+      <td>21688.04048</td>
+      <td>25116.17581</td>
+      <td>26406.73985</td>
+      <td>29804.34567</td>
+      <td>32166.50006</td>
+      <td>35278.41874</td>
+    </tr>
+    <tr>
+      <th>Finland</th>
+      <td>6424.519071</td>
+      <td>7545.415386</td>
+      <td>9371.842561</td>
+      <td>10921.63626</td>
+      <td>14358.87590</td>
+      <td>15605.42283</td>
+      <td>18533.15761</td>
+      <td>21141.01223</td>
+      <td>20647.16499</td>
+      <td>23723.95020</td>
+      <td>28204.59057</td>
+      <td>33207.08440</td>
+    </tr>
+    <tr>
+      <th>France</th>
+      <td>7029.809327</td>
+      <td>8662.834898</td>
+      <td>10560.485530</td>
+      <td>12999.91766</td>
+      <td>16107.19171</td>
+      <td>18292.63514</td>
+      <td>20293.89746</td>
+      <td>22066.44214</td>
+      <td>24703.79615</td>
+      <td>25889.78487</td>
+      <td>28926.03234</td>
+      <td>30470.01670</td>
+    </tr>
+    <tr>
+      <th>Germany</th>
+      <td>7144.114393</td>
+      <td>10187.826650</td>
+      <td>12902.462910</td>
+      <td>14745.62561</td>
+      <td>18016.18027</td>
+      <td>20512.92123</td>
+      <td>22031.53274</td>
+      <td>24639.18566</td>
+      <td>26505.30317</td>
+      <td>27788.88416</td>
+      <td>30035.80198</td>
+      <td>32170.37442</td>
+    </tr>
+    <tr>
+      <th>Greece</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>12724.82957</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>17541.49634</td>
+      <td>NaN</td>
+      <td>22514.25480</td>
+      <td>27538.41188</td>
+    </tr>
+    <tr>
+      <th>Hungary</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>Iceland</th>
+      <td>7267.688428</td>
+      <td>9244.001412</td>
+      <td>10350.159060</td>
+      <td>13319.89568</td>
+      <td>15798.06362</td>
+      <td>19654.96247</td>
+      <td>23269.60750</td>
+      <td>26923.20628</td>
+      <td>25144.39201</td>
+      <td>28061.09966</td>
+      <td>31163.20196</td>
+      <td>36180.78919</td>
+    </tr>
+    <tr>
+      <th>Ireland</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>17558.81555</td>
+      <td>24521.94713</td>
+      <td>34077.04939</td>
+      <td>40675.99635</td>
+    </tr>
+    <tr>
+      <th>Italy</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>16537.48350</td>
+      <td>19207.23482</td>
+      <td>22013.64486</td>
+      <td>24675.02446</td>
+      <td>27968.09817</td>
+      <td>28569.71970</td>
+    </tr>
+    <tr>
+      <th>Montenegro</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>Netherlands</th>
+      <td>8941.571858</td>
+      <td>11276.193440</td>
+      <td>12790.849560</td>
+      <td>15363.25136</td>
+      <td>18794.74567</td>
+      <td>21209.05920</td>
+      <td>21399.46046</td>
+      <td>23651.32361</td>
+      <td>26790.94961</td>
+      <td>30246.13063</td>
+      <td>33724.75778</td>
+      <td>36797.93332</td>
+    </tr>
+    <tr>
+      <th>Norway</th>
+      <td>10095.421720</td>
+      <td>11653.973040</td>
+      <td>13450.401510</td>
+      <td>16361.87647</td>
+      <td>18965.05551</td>
+      <td>23311.34939</td>
+      <td>26298.63531</td>
+      <td>31540.97480</td>
+      <td>33965.66115</td>
+      <td>41283.16433</td>
+      <td>44683.97525</td>
+      <td>49357.19017</td>
+    </tr>
+    <tr>
+      <th>Poland</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>Portugal</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>Romania</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>Serbia</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>Slovak Republic</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>Slovenia</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>15277.03017</td>
+      <td>17866.72175</td>
+      <td>18678.53492</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>25768.25759</td>
+    </tr>
+    <tr>
+      <th>Spain</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>18603.06452</td>
+      <td>20445.29896</td>
+      <td>24835.47166</td>
+      <td>28821.06370</td>
+    </tr>
+    <tr>
+      <th>Sweden</th>
+      <td>8527.844662</td>
+      <td>9911.878226</td>
+      <td>12329.441920</td>
+      <td>15258.29697</td>
+      <td>17832.02464</td>
+      <td>18855.72521</td>
+      <td>20667.38125</td>
+      <td>23586.92927</td>
+      <td>23880.01683</td>
+      <td>25266.59499</td>
+      <td>29341.63093</td>
+      <td>33859.74835</td>
+    </tr>
+    <tr>
+      <th>Switzerland</th>
+      <td>14734.232750</td>
+      <td>17909.489730</td>
+      <td>20431.092700</td>
+      <td>22966.14432</td>
+      <td>27195.11304</td>
+      <td>26982.29052</td>
+      <td>28397.71512</td>
+      <td>30281.70459</td>
+      <td>31871.53030</td>
+      <td>32135.32301</td>
+      <td>34480.95771</td>
+      <td>37506.41907</td>
+    </tr>
+    <tr>
+      <th>Turkey</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>United Kingdom</th>
+      <td>9979.508487</td>
+      <td>11283.177950</td>
+      <td>12477.177070</td>
+      <td>14142.85089</td>
+      <td>15895.11641</td>
+      <td>17428.74846</td>
+      <td>18232.42452</td>
+      <td>21664.78767</td>
+      <td>22705.09254</td>
+      <td>26074.53136</td>
+      <td>29478.99919</td>
+      <td>33203.26128</td>
+    </tr>
+  </tbody>
+</table>
+</div></div>
+</div>
+<ul class="simple">
+<li>How about this one?</li>
+</ul>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">wealth_score</span> <span class="o">=</span> <span class="n">mask_higher</span><span class="o">.</span><span class="n">aggregate</span><span class="p">(</span><span class="s1">&#39;sum&#39;</span><span class="p">,</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span><span class="o">/</span><span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">columns</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none"><div class="highlight"><pre>
+<span></span>In [21]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3"><div class="highlight"><pre>
+<span></span><span class="n">wealth_score</span> <span class="o">=</span> <span class="n">mask_higher</span><span class="o">.</span><span class="n">aggregate</span><span class="p">(</span><span class="s1">&#39;sum&#39;</span><span class="p">,</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span><span class="o">/</span><span class="nb">len</span><span class="p">(</span><span class="n">df_euro</span><span class="o">.</span><span class="n">columns</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<ul class="simple">
+<li>And finally:</li>
+</ul>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">data</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="n">wealth_score</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+</pre></div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none"><div class="highlight"><pre>
+<span></span>In [36]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3"><div class="highlight"><pre>
+<span></span><span class="n">df_euro</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="n">wealth_score</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none"><div class="highlight"><pre>
+<span></span>Out[36]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>gdpPercap_1952</th>
+      <th>gdpPercap_1957</th>
+      <th>gdpPercap_1962</th>
+      <th>gdpPercap_1967</th>
+      <th>gdpPercap_1972</th>
+      <th>gdpPercap_1977</th>
+      <th>gdpPercap_1982</th>
+      <th>gdpPercap_1987</th>
+      <th>gdpPercap_1992</th>
+      <th>gdpPercap_1997</th>
+      <th>gdpPercap_2002</th>
+      <th>gdpPercap_2007</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0.000000</th>
+      <td>36916.854200</td>
+      <td>46110.918793</td>
+      <td>56850.065437</td>
+      <td>71324.848786</td>
+      <td>88569.346898</td>
+      <td>104459.358438</td>
+      <td>113553.768507</td>
+      <td>119649.599409</td>
+      <td>92380.047256</td>
+      <td>103772.937598</td>
+      <td>118590.929863</td>
+      <td>149577.357928</td>
+    </tr>
+    <tr>
+      <th>0.333333</th>
+      <td>16790.046878</td>
+      <td>20942.456800</td>
+      <td>25744.935321</td>
+      <td>33567.667670</td>
+      <td>45277.839976</td>
+      <td>53860.456750</td>
+      <td>59679.634020</td>
+      <td>64436.912960</td>
+      <td>67918.093220</td>
+      <td>80876.051580</td>
+      <td>102086.795210</td>
+      <td>122803.729520</td>
+    </tr>
+    <tr>
+      <th>0.500000</th>
+      <td>11807.544405</td>
+      <td>14505.000150</td>
+      <td>18380.449470</td>
+      <td>21421.846200</td>
+      <td>25377.727380</td>
+      <td>29056.145370</td>
+      <td>31914.712050</td>
+      <td>35517.678220</td>
+      <td>36310.666080</td>
+      <td>40723.538700</td>
+      <td>45564.308390</td>
+      <td>51403.028210</td>
+    </tr>
+    <tr>
+      <th>1.000000</th>
+      <td>104317.277560</td>
+      <td>127332.008735</td>
+      <td>149989.154201</td>
+      <td>178000.350040</td>
+      <td>215162.343140</td>
+      <td>241143.412730</td>
+      <td>263388.781960</td>
+      <td>296825.131210</td>
+      <td>315238.235970</td>
+      <td>346930.926170</td>
+      <td>385109.939210</td>
+      <td>427850.333420</td>
+    </tr>
+  </tbody>
+</table>
+</div></div>
+</div>
+<p>Write an expression to find the Per Capita GDP of Serbia in 2007.</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none"><div class="highlight"><pre>
+<span></span>In [23]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3"><div class="highlight"><pre>
+<span></span><span class="n">df_euro</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="s1">&#39;Serbia&#39;</span><span class="p">,</span> <span class="s1">&#39;gdpPercap_2007&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none"><div class="highlight"><pre>
+<span></span>Out[23]:
+</pre></div>
+</div>
+<div class="output_area highlight-none"><div class="highlight"><pre>
+<span></span>9786.534714
+</pre></div>
+</div>
+</div>
+<ul class="simple">
+<li>What does the following code do? Explain each line.</li>
+</ul>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">first</span> <span class="o">=</span> <span class="n">pandas</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;data/gap_data/gapminder_all.csv&#39;</span><span class="p">,</span> <span class="n">index_col</span><span class="o">=</span><span class="s1">&#39;country&#39;</span><span class="p">)</span>
+<span class="n">second</span> <span class="o">=</span> <span class="n">first</span><span class="p">[</span><span class="n">first</span><span class="p">[</span><span class="s1">&#39;continent&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;Americas&#39;</span><span class="p">]</span>
+<span class="n">third</span> <span class="o">=</span> <span class="n">second</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="s1">&#39;Puerto Rico&#39;</span><span class="p">)</span>
+<span class="n">fourth</span> <span class="o">=</span> <span class="n">third</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="s1">&#39;continent&#39;</span><span class="p">,</span> <span class="n">axis</span> <span class="o">=</span> <span class="mi">1</span><span class="p">)</span>
+<span class="n">fourth</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s1">&#39;result.csv&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none"><div class="highlight"><pre>
+<span></span>In [ ]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3"><div class="highlight"><pre>
+<span></span><span class="n">first</span> <span class="o">=</span> <span class="n">pandas</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;data/gap_data/gapminder_all.csv&#39;</span><span class="p">,</span> <span class="n">index_col</span><span class="o">=</span><span class="s1">&#39;country&#39;</span><span class="p">)</span>
+
+<span class="n">second</span> <span class="o">=</span> <span class="n">first</span><span class="p">[</span><span class="n">first</span><span class="p">[</span><span class="s1">&#39;continent&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;Americas&#39;</span><span class="p">]</span>
+
+<span class="n">third</span> <span class="o">=</span> <span class="n">second</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="s1">&#39;Puerto Rico&#39;</span><span class="p">)</span>
+
+<span class="n">fourth</span> <span class="o">=</span> <span class="n">third</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="s1">&#39;continent&#39;</span><span class="p">,</span> <span class="n">axis</span> <span class="o">=</span> <span class="mi">1</span><span class="p">)</span>
+
+<span class="n">fourth</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s1">&#39;result.csv&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<p>Write an expression to find the following:</p>
+<ol class="arabic simple">
+<li>GDP per capita for all countries in 1982. <em>George</em></li>
+<li>GDP per capita for Denmark for all years. <em>Max</em></li>
+<li>GDP per capita for all countries for years after 1985. <em>Bo</em></li>
+<li>GDP per capita for each country in 2007 as a multiple of GDP per
+capita for that country in 1952. <em>Kashish</em></li>
+</ol>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none"><div class="highlight"><pre>
+<span></span>In [43]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3"><div class="highlight"><pre>
+<span></span><span class="n">gap_all</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;data/gap_data/gapminder_all.csv&#39;</span><span class="p">,</span> <span class="n">index_col</span><span class="o">=</span><span class="s1">&#39;country&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none"><div class="highlight"><pre>
+<span></span>In [44]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3"><div class="highlight"><pre>
+<span></span><span class="n">gap_all</span><span class="p">[[</span><span class="s1">&#39;gdpPercap_1982&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none"><div class="highlight"><pre>
+<span></span>Out[44]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>gdpPercap_1982</th>
+    </tr>
+    <tr>
+      <th>country</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Algeria</th>
+      <td>5745.160213</td>
+    </tr>
+    <tr>
+      <th>Angola</th>
+      <td>2756.953672</td>
+    </tr>
+    <tr>
+      <th>Benin</th>
+      <td>1277.897616</td>
+    </tr>
+    <tr>
+      <th>Botswana</th>
+      <td>4551.142150</td>
+    </tr>
+    <tr>
+      <th>Burkina Faso</th>
+      <td>807.198586</td>
+    </tr>
+  </tbody>
+</table>
+</div></div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none"><div class="highlight"><pre>
+<span></span>In [46]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3"><div class="highlight"><pre>
+<span></span><span class="n">gap_all</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="s1">&#39;Denmark&#39;</span><span class="p">,</span> <span class="s1">&#39;gdpPercap_1952&#39;</span><span class="p">:</span> <span class="s1">&#39;gdpPercap_2007&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none"><div class="highlight"><pre>
+<span></span>Out[46]:
+</pre></div>
+</div>
+<div class="output_area highlight-none"><div class="highlight"><pre>
+<span></span>gdpPercap_1952    9692.39
+gdpPercap_1957    11099.7
+gdpPercap_1962    13583.3
+gdpPercap_1967    15937.2
+gdpPercap_1972    18866.2
+gdpPercap_1977    20422.9
+gdpPercap_1982      21688
+gdpPercap_1987    25116.2
+gdpPercap_1992    26406.7
+gdpPercap_1997    29804.3
+gdpPercap_2002    32166.5
+gdpPercap_2007    35278.4
+Name: Denmark, dtype: object
+</pre></div>
+</div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none"><div class="highlight"><pre>
+<span></span>In [50]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3"><div class="highlight"><pre>
+<span></span><span class="n">gap_all</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,</span> <span class="s1">&#39;gdpPercap_1992&#39;</span><span class="p">:</span><span class="s1">&#39;gdpPercap_2007&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none"><div class="highlight"><pre>
+<span></span>Out[50]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>gdpPercap_1992</th>
+      <th>gdpPercap_1997</th>
+      <th>gdpPercap_2002</th>
+      <th>gdpPercap_2007</th>
+    </tr>
+    <tr>
+      <th>country</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Algeria</th>
+      <td>5023.216647</td>
+      <td>4797.295051</td>
+      <td>5288.040382</td>
+      <td>6223.367465</td>
+    </tr>
+    <tr>
+      <th>Angola</th>
+      <td>2627.845685</td>
+      <td>2277.140884</td>
+      <td>2773.287312</td>
+      <td>4797.231267</td>
+    </tr>
+    <tr>
+      <th>Benin</th>
+      <td>1191.207681</td>
+      <td>1232.975292</td>
+      <td>1372.877931</td>
+      <td>1441.284873</td>
+    </tr>
+    <tr>
+      <th>Botswana</th>
+      <td>7954.111645</td>
+      <td>8647.142313</td>
+      <td>11003.605080</td>
+      <td>12569.851770</td>
+    </tr>
+    <tr>
+      <th>Burkina Faso</th>
+      <td>931.752773</td>
+      <td>946.294962</td>
+      <td>1037.645221</td>
+      <td>1217.032994</td>
+    </tr>
+    <tr>
+      <th>Burundi</th>
+      <td>631.699878</td>
+      <td>463.115148</td>
+      <td>446.403513</td>
+      <td>430.070692</td>
+    </tr>
+    <tr>
+      <th>Cameroon</th>
+      <td>1793.163278</td>
+      <td>1694.337469</td>
+      <td>1934.011449</td>
+      <td>2042.095240</td>
+    </tr>
+    <tr>
+      <th>Central African Republic</th>
+      <td>747.905525</td>
+      <td>740.506332</td>
+      <td>738.690607</td>
+      <td>706.016537</td>
+    </tr>
+    <tr>
+      <th>Chad</th>
+      <td>1058.064300</td>
+      <td>1004.961353</td>
+      <td>1156.181860</td>
+      <td>1704.063724</td>
+    </tr>
+    <tr>
+      <th>Comoros</th>
+      <td>1246.907370</td>
+      <td>1173.618235</td>
+      <td>1075.811558</td>
+      <td>986.147879</td>
+    </tr>
+    <tr>
+      <th>Congo Dem. Rep.</th>
+      <td>457.719181</td>
+      <td>312.188423</td>
+      <td>241.165877</td>
+      <td>277.551859</td>
+    </tr>
+    <tr>
+      <th>Congo Rep.</th>
+      <td>4016.239529</td>
+      <td>3484.164376</td>
+      <td>3484.061970</td>
+      <td>3632.557798</td>
+    </tr>
+    <tr>
+      <th>Cote d'Ivoire</th>
+      <td>1648.073791</td>
+      <td>1786.265407</td>
+      <td>1648.800823</td>
+      <td>1544.750112</td>
+    </tr>
+    <tr>
+      <th>Djibouti</th>
+      <td>2377.156192</td>
+      <td>1895.016984</td>
+      <td>1908.260867</td>
+      <td>2082.481567</td>
+    </tr>
+    <tr>
+      <th>Egypt</th>
+      <td>3794.755195</td>
+      <td>4173.181797</td>
+      <td>4754.604414</td>
+      <td>5581.180998</td>
+    </tr>
+    <tr>
+      <th>Equatorial Guinea</th>
+      <td>1132.055034</td>
+      <td>2814.480755</td>
+      <td>7703.495900</td>
+      <td>12154.089750</td>
+    </tr>
+    <tr>
+      <th>Eritrea</th>
+      <td>582.858510</td>
+      <td>913.470790</td>
+      <td>765.350001</td>
+      <td>641.369524</td>
+    </tr>
+    <tr>
+      <th>Ethiopia</th>
+      <td>421.353465</td>
+      <td>515.889401</td>
+      <td>530.053532</td>
+      <td>690.805576</td>
+    </tr>
+    <tr>
+      <th>Gabon</th>
+      <td>13522.157520</td>
+      <td>14722.841880</td>
+      <td>12521.713920</td>
+      <td>13206.484520</td>
+    </tr>
+    <tr>
+      <th>Gambia</th>
+      <td>665.624413</td>
+      <td>653.730170</td>
+      <td>660.585600</td>
+      <td>752.749726</td>
+    </tr>
+    <tr>
+      <th>Ghana</th>
+      <td>925.060154</td>
+      <td>1005.245812</td>
+      <td>1111.984578</td>
+      <td>1327.608910</td>
+    </tr>
+    <tr>
+      <th>Guinea</th>
+      <td>794.348438</td>
+      <td>869.449767</td>
+      <td>945.583584</td>
+      <td>942.654211</td>
+    </tr>
+    <tr>
+      <th>Guinea-Bissau</th>
+      <td>745.539871</td>
+      <td>796.664468</td>
+      <td>575.704718</td>
+      <td>579.231743</td>
+    </tr>
+    <tr>
+      <th>Kenya</th>
+      <td>1341.921721</td>
+      <td>1360.485021</td>
+      <td>1287.514732</td>
+      <td>1463.249282</td>
+    </tr>
+    <tr>
+      <th>Lesotho</th>
+      <td>977.486272</td>
+      <td>1186.147994</td>
+      <td>1275.184575</td>
+      <td>1569.331442</td>
+    </tr>
+    <tr>
+      <th>Liberia</th>
+      <td>636.622919</td>
+      <td>609.173951</td>
+      <td>531.482368</td>
+      <td>414.507341</td>
+    </tr>
+    <tr>
+      <th>Libya</th>
+      <td>9640.138501</td>
+      <td>9467.446056</td>
+      <td>9534.677467</td>
+      <td>12057.499280</td>
+    </tr>
+    <tr>
+      <th>Madagascar</th>
+      <td>1040.676190</td>
+      <td>986.295896</td>
+      <td>894.637082</td>
+      <td>1044.770126</td>
+    </tr>
+    <tr>
+      <th>Malawi</th>
+      <td>563.200014</td>
+      <td>692.275810</td>
+      <td>665.423119</td>
+      <td>759.349910</td>
+    </tr>
+    <tr>
+      <th>Mali</th>
+      <td>739.014375</td>
+      <td>790.257985</td>
+      <td>951.409752</td>
+      <td>1042.581557</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>Belgium</th>
+      <td>25575.570690</td>
+      <td>27561.196630</td>
+      <td>30485.883750</td>
+      <td>33692.605080</td>
+    </tr>
+    <tr>
+      <th>Bosnia and Herzegovina</th>
+      <td>2546.781445</td>
+      <td>4766.355904</td>
+      <td>6018.975239</td>
+      <td>7446.298803</td>
+    </tr>
+    <tr>
+      <th>Bulgaria</th>
+      <td>6302.623438</td>
+      <td>5970.388760</td>
+      <td>7696.777725</td>
+      <td>10680.792820</td>
+    </tr>
+    <tr>
+      <th>Croatia</th>
+      <td>8447.794873</td>
+      <td>9875.604515</td>
+      <td>11628.388950</td>
+      <td>14619.222720</td>
+    </tr>
+    <tr>
+      <th>Czech Republic</th>
+      <td>14297.021220</td>
+      <td>16048.514240</td>
+      <td>17596.210220</td>
+      <td>22833.308510</td>
+    </tr>
+    <tr>
+      <th>Denmark</th>
+      <td>26406.739850</td>
+      <td>29804.345670</td>
+      <td>32166.500060</td>
+      <td>35278.418740</td>
+    </tr>
+    <tr>
+      <th>Finland</th>
+      <td>20647.164990</td>
+      <td>23723.950200</td>
+      <td>28204.590570</td>
+      <td>33207.084400</td>
+    </tr>
+    <tr>
+      <th>France</th>
+      <td>24703.796150</td>
+      <td>25889.784870</td>
+      <td>28926.032340</td>
+      <td>30470.016700</td>
+    </tr>
+    <tr>
+      <th>Germany</th>
+      <td>26505.303170</td>
+      <td>27788.884160</td>
+      <td>30035.801980</td>
+      <td>32170.374420</td>
+    </tr>
+    <tr>
+      <th>Greece</th>
+      <td>17541.496340</td>
+      <td>18747.698140</td>
+      <td>22514.254800</td>
+      <td>27538.411880</td>
+    </tr>
+    <tr>
+      <th>Hungary</th>
+      <td>10535.628550</td>
+      <td>11712.776800</td>
+      <td>14843.935560</td>
+      <td>18008.944440</td>
+    </tr>
+    <tr>
+      <th>Iceland</th>
+      <td>25144.392010</td>
+      <td>28061.099660</td>
+      <td>31163.201960</td>
+      <td>36180.789190</td>
+    </tr>
+    <tr>
+      <th>Ireland</th>
+      <td>17558.815550</td>
+      <td>24521.947130</td>
+      <td>34077.049390</td>
+      <td>40675.996350</td>
+    </tr>
+    <tr>
+      <th>Italy</th>
+      <td>22013.644860</td>
+      <td>24675.024460</td>
+      <td>27968.098170</td>
+      <td>28569.719700</td>
+    </tr>
+    <tr>
+      <th>Montenegro</th>
+      <td>7003.339037</td>
+      <td>6465.613349</td>
+      <td>6557.194282</td>
+      <td>9253.896111</td>
+    </tr>
+    <tr>
+      <th>Netherlands</th>
+      <td>26790.949610</td>
+      <td>30246.130630</td>
+      <td>33724.757780</td>
+      <td>36797.933320</td>
+    </tr>
+    <tr>
+      <th>Norway</th>
+      <td>33965.661150</td>
+      <td>41283.164330</td>
+      <td>44683.975250</td>
+      <td>49357.190170</td>
+    </tr>
+    <tr>
+      <th>Poland</th>
+      <td>7738.881247</td>
+      <td>10159.583680</td>
+      <td>12002.239080</td>
+      <td>15389.924680</td>
+    </tr>
+    <tr>
+      <th>Portugal</th>
+      <td>16207.266630</td>
+      <td>17641.031560</td>
+      <td>19970.907870</td>
+      <td>20509.647770</td>
+    </tr>
+    <tr>
+      <th>Romania</th>
+      <td>6598.409903</td>
+      <td>7346.547557</td>
+      <td>7885.360081</td>
+      <td>10808.475610</td>
+    </tr>
+    <tr>
+      <th>Serbia</th>
+      <td>9325.068238</td>
+      <td>7914.320304</td>
+      <td>7236.075251</td>
+      <td>9786.534714</td>
+    </tr>
+    <tr>
+      <th>Slovak Republic</th>
+      <td>9498.467723</td>
+      <td>12126.230650</td>
+      <td>13638.778370</td>
+      <td>18678.314350</td>
+    </tr>
+    <tr>
+      <th>Slovenia</th>
+      <td>14214.716810</td>
+      <td>17161.107350</td>
+      <td>20660.019360</td>
+      <td>25768.257590</td>
+    </tr>
+    <tr>
+      <th>Spain</th>
+      <td>18603.064520</td>
+      <td>20445.298960</td>
+      <td>24835.471660</td>
+      <td>28821.063700</td>
+    </tr>
+    <tr>
+      <th>Sweden</th>
+      <td>23880.016830</td>
+      <td>25266.594990</td>
+      <td>29341.630930</td>
+      <td>33859.748350</td>
+    </tr>
+    <tr>
+      <th>Switzerland</th>
+      <td>31871.530300</td>
+      <td>32135.323010</td>
+      <td>34480.957710</td>
+      <td>37506.419070</td>
+    </tr>
+    <tr>
+      <th>Turkey</th>
+      <td>5678.348271</td>
+      <td>6601.429915</td>
+      <td>6508.085718</td>
+      <td>8458.276384</td>
+    </tr>
+    <tr>
+      <th>United Kingdom</th>
+      <td>22705.092540</td>
+      <td>26074.531360</td>
+      <td>29478.999190</td>
+      <td>33203.261280</td>
+    </tr>
+    <tr>
+      <th>Australia</th>
+      <td>23424.766830</td>
+      <td>26997.936570</td>
+      <td>30687.754730</td>
+      <td>34435.367440</td>
+    </tr>
+    <tr>
+      <th>New Zealand</th>
+      <td>18363.324940</td>
+      <td>21050.413770</td>
+      <td>23189.801350</td>
+      <td>25185.009110</td>
+    </tr>
+  </tbody>
+</table>
+<p>142 rows × 4 columns</p>
+</div></div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none"><div class="highlight"><pre>
+<span></span>In [51]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3"><div class="highlight"><pre>
+<span></span><span class="n">gap_all</span><span class="p">[</span><span class="s1">&#39;gdp_mult&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">gap_all</span><span class="o">.</span><span class="n">gdpPercap_2007</span> <span class="o">/</span> <span class="n">gap_all</span><span class="o">.</span><span class="n">gdpPercap_1952</span>
+<span class="n">gap_all</span><span class="o">.</span><span class="n">gdp_mult</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none"><div class="highlight"><pre>
+<span></span>Out[51]:
+</pre></div>
+</div>
+<div class="output_area highlight-none"><div class="highlight"><pre>
+<span></span>country
+Algeria          2.541179
+Angola           1.362614
+Benin            1.356182
+Botswana        14.766499
+Burkina Faso     2.240260
+Name: gdp_mult, dtype: float64
+</pre></div>
+</div>
+</div>
+<div class="section" id="Loops-and-Data-Sets">
+<h2>Loops and Data Sets<a class="headerlink" href="#Loops-and-Data-Sets" title="Permalink to this headline">¶</a></h2>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none"><div class="highlight"><pre>
+<span></span>In [1]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3"><div class="highlight"><pre>
+<span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none"><div class="highlight"><pre>
+<span></span>In [4]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3"><div class="highlight"><pre>
+<span></span><span class="k">for</span> <span class="n">file</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;data/gap_data/gapminder_gdp_africa.csv&#39;</span><span class="p">,</span> <span class="s1">&#39;data/gap_data/gapminder_gdp_asia.csv&#39;</span><span class="p">]:</span>
+    <span class="n">data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">file</span><span class="p">,</span> <span class="n">index_col</span><span class="o">=</span><span class="s1">&#39;country&#39;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">file</span><span class="p">,</span> <span class="n">data</span><span class="o">.</span><span class="n">min</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+data/gap_data/gapminder_gdp_africa.csv gdpPercap_1952    298.846212
+gdpPercap_1957    335.997115
+gdpPercap_1962    355.203227
+gdpPercap_1967    412.977514
+gdpPercap_1972    464.099504
+gdpPercap_1977    502.319733
+gdpPercap_1982    462.211415
+gdpPercap_1987    389.876185
+gdpPercap_1992    410.896824
+gdpPercap_1997    312.188423
+gdpPercap_2002    241.165877
+gdpPercap_2007    277.551859
+dtype: float64
+data/gap_data/gapminder_gdp_asia.csv gdpPercap_1952    331.0
+gdpPercap_1957    350.0
+gdpPercap_1962    388.0
+gdpPercap_1967    349.0
+gdpPercap_1972    357.0
+gdpPercap_1977    371.0
+gdpPercap_1982    424.0
+gdpPercap_1987    385.0
+gdpPercap_1992    347.0
+gdpPercap_1997    415.0
+gdpPercap_2002    611.0
+gdpPercap_2007    944.0
+dtype: float64
+</pre></div></div>
+</div>
+</div>
+<div class="section" id="Using-glob.glob-to-load-files">
+<h2>Using <code class="docutils literal"><span class="pre">glob.glob</span></code> to load files<a class="headerlink" href="#Using-glob.glob-to-load-files" title="Permalink to this headline">¶</a></h2>
+<p>In Unix, the term “globbing” means “matching a set of files with a
+pattern”. The most common patterns are: - * meaning “match zero or more
+characters” - ? meaning “match exactly one character”</p>
+<p>Python contains the glob library to provide pattern matching
+functionality The glob library contains a function also called glob to
+match file patterns E.g., glob.glob(‘*.txt’) matches all files in the
+current directory whose names end with .txt. Result is a (possibly
+empty) list of character strings.</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none"><div class="highlight"><pre>
+<span></span>In [53]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3"><div class="highlight"><pre>
+<span></span><span class="kn">import</span> <span class="nn">glob</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;all csv files in data directory:&#39;</span><span class="p">,</span> <span class="n">glob</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="s1">&#39;data/gap_data/*.csv&#39;</span><span class="p">),</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+all csv files in data directory: [&#39;data/gap_data/gapminder_all.csv&#39;, &#39;data/gap_data/gapminder_gdp_africa.csv&#39;, &#39;data/gap_data/gapminder_gdp_americas.csv&#39;, &#39;data/gap_data/gapminder_gdp_asia.csv&#39;, &#39;data/gap_data/gapminder_gdp_europe.csv&#39;, &#39;data/gap_data/gapminder_gdp_oceania.csv&#39;]
+
+</pre></div></div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none"><div class="highlight"><pre>
+<span></span>In [54]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3"><div class="highlight"><pre>
+<span></span><span class="k">for</span> <span class="n">filename</span> <span class="ow">in</span> <span class="n">glob</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="s1">&#39;data/gap_data/gapminder_*.csv&#39;</span><span class="p">):</span>
+    <span class="n">data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;gdpPercap_1952&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">min</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+data/gap_data/gapminder_all.csv 298.8462121
+data/gap_data/gapminder_gdp_africa.csv 298.8462121
+data/gap_data/gapminder_gdp_americas.csv 1397.7171369999999
+data/gap_data/gapminder_gdp_asia.csv 331.0
+data/gap_data/gapminder_gdp_europe.csv 973.5331947999999
+data/gap_data/gapminder_gdp_oceania.csv 10039.595640000001
+</pre></div></div>
+</div>
+<p><strong>PROBLEM</strong></p>
+<p>Which of these files is not matched by the expression
+glob.glob(‘data/gap_data/*as*.csv’)?</p>
+<ol class="arabic simple">
+<li><code class="docutils literal"><span class="pre">data/gapminder_gdp_africa.csv</span></code></li>
+<li><code class="docutils literal"><span class="pre">data/gapminder_gdp_americas.csv</span></code></li>
+<li><code class="docutils literal"><span class="pre">data/gapminder_gdp_asia.csv</span></code></li>
+<li>1 and 2 are not matched.</li>
+</ol>
+</div>
+<div class="section" id="Writing-Functions">
+<h2>Writing Functions<a class="headerlink" href="#Writing-Functions" title="Permalink to this headline">¶</a></h2>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none"><div class="highlight"><pre>
+<span></span>In [55]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3"><div class="highlight"><pre>
+<span></span><span class="k">def</span> <span class="nf">hi_there</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Hi there&#39;</span><span class="p">,</span> <span class="n">name</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none"><div class="highlight"><pre>
+<span></span>In [56]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3"><div class="highlight"><pre>
+<span></span><span class="n">hi_there</span><span class="p">(</span><span class="s1">&#39;Steve&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+Hi there Steve
+</pre></div></div>
+</div>
+<p>Using <code class="docutils literal"><span class="pre">return</span></code> in functions:</p>
+<p>Use return … to give a value back to the caller. May occur anywhere in
+the function. But functions are easier to understand if return occurs: -
+At the start to handle special cases. - At the very end, with a final
+result.</p>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none"><div class="highlight"><pre>
+<span></span>In [57]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3"><div class="highlight"><pre>
+<span></span><span class="k">def</span> <span class="nf">average</span><span class="p">(</span><span class="n">values</span><span class="p">):</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">values</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="k">return</span> <span class="kc">None</span>
+    <span class="k">return</span> <span class="nb">sum</span><span class="p">(</span><span class="n">values</span><span class="p">)</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">values</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none"><div class="highlight"><pre>
+<span></span>In [60]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3"><div class="highlight"><pre>
+<span></span><span class="n">average</span><span class="p">([</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none"><div class="highlight"><pre>
+<span></span>Out[60]:
+</pre></div>
+</div>
+<div class="output_area highlight-none"><div class="highlight"><pre>
+<span></span>4.0
+</pre></div>
+</div>
+</div>
+<p><strong>PROBLEM</strong></p>
+<p>Fill in the blanks to create a function that takes a single filename as
+an argument, loads the data in the file named by the argument, and
+returns the minimum value in that data</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span>
+
+<span class="k">def</span> <span class="nf">min_in_data</span><span class="p">(</span><span class="n">____</span><span class="p">):</span>
+    <span class="n">data</span> <span class="o">=</span> <span class="n">____</span>
+    <span class="k">return</span> <span class="n">____</span>
+</pre></div>
+</div>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none"><div class="highlight"><pre>
+<span></span>In [61]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3"><div class="highlight"><pre>
+<span></span><span class="k">def</span> <span class="nf">min_in_data</span><span class="p">(</span><span class="n">filepath</span><span class="p">):</span>
+    <span class="n">data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">filepath</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">data</span><span class="o">.</span><span class="n">min</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none"><div class="highlight"><pre>
+<span></span>In [62]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3"><div class="highlight"><pre>
+<span></span><span class="n">min_in_data</span><span class="p">(</span><span class="s1">&#39;data/gap_data/gapminder_all.csv&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none"><div class="highlight"><pre>
+<span></span>Out[62]:
+</pre></div>
+</div>
+<div class="output_area highlight-none"><div class="highlight"><pre>
+<span></span>continent              Africa
+country           Afghanistan
+gdpPercap_1952        298.846
+gdpPercap_1957        335.997
+gdpPercap_1962        355.203
+gdpPercap_1967            349
+gdpPercap_1972            357
+gdpPercap_1977            371
+gdpPercap_1982            424
+gdpPercap_1987            385
+gdpPercap_1992            347
+gdpPercap_1997        312.188
+gdpPercap_2002        241.166
+gdpPercap_2007        277.552
+lifeExp_1952           28.801
+lifeExp_1957           30.332
+lifeExp_1962           31.997
+lifeExp_1967            34.02
+lifeExp_1972             35.4
+lifeExp_1977            31.22
+lifeExp_1982           38.445
+lifeExp_1987           39.906
+lifeExp_1992           23.599
+lifeExp_1997           36.087
+lifeExp_2002           39.193
+lifeExp_2007           39.613
+pop_1952                60011
+pop_1957                61325
+pop_1962                65345
+pop_1967                70787
+pop_1972                76595
+pop_1977                86796
+pop_1982                98593
+pop_1987               110812
+pop_1992               125911
+pop_1997               145608
+pop_2002               170372
+pop_2007               199579
+dtype: object
+</pre></div>
+</div>
+</div>
+<p><strong>PROBLEM</strong></p>
+<p>Assume the code below has been executed:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="kn">as</span> <span class="nn">pd</span>
+
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;data/gap_data/gapminder_gdp_asia.csv&#39;</span><span class="p">,</span> <span class="n">index_col</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">japan</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="s1">&#39;Japan&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li>Complete the statements below to obtain the average GDP for Japan
+across the years reported for the 1980s.</li>
+</ul>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">year</span> <span class="o">=</span> <span class="mi">1983</span>
+<span class="n">gdp_decade</span> <span class="o">=</span> <span class="s1">&#39;gdpPercap_&#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">year</span> <span class="o">//</span> <span class="n">____</span><span class="p">)</span>
+<span class="n">avg</span> <span class="o">=</span> <span class="p">(</span><span class="n">japan</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">gdp_decade</span> <span class="o">+</span> <span class="n">___</span><span class="p">]</span> <span class="o">+</span> <span class="n">japan</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">gdp_decade</span> <span class="o">+</span> <span class="n">___</span><span class="p">])</span> <span class="o">/</span> <span class="mi">2</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li>Abstract the code above into a single function.</li>
+</ul>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">avg_gdp_in_decade</span><span class="p">(</span><span class="n">country</span><span class="p">,</span> <span class="n">continent</span><span class="p">,</span> <span class="n">year</span><span class="p">):</span>
+    <span class="n">df</span> <span class="o">=</span> <span class="n">pandas</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;data/gapminder_gdp_&#39;</span><span class="o">+</span><span class="n">___</span><span class="o">+</span><span class="s1">&#39;.csv&#39;</span><span class="p">,</span><span class="n">delimiter</span><span class="o">=</span><span class="s1">&#39;,&#39;</span><span class="p">,</span><span class="n">index_col</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+    <span class="n">____</span>
+    <span class="n">____</span>
+    <span class="n">____</span>
+    <span class="k">return</span> <span class="n">avg</span>
+</pre></div>
+</div>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none"><div class="highlight"><pre>
+<span></span>In [76]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3"><div class="highlight"><pre>
+<span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;data/gap_data/gapminder_gdp_asia.csv&#39;</span><span class="p">,</span> <span class="n">index_col</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">japan</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="s1">&#39;Japan&#39;</span><span class="p">]</span>
+<span class="n">year</span> <span class="o">=</span> <span class="mi">1983</span>
+<span class="n">gdp_decade</span> <span class="o">=</span> <span class="s1">&#39;gdpPercap_&#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">year</span> <span class="o">//</span> <span class="mi">10</span><span class="p">)</span>
+<span class="n">avg</span> <span class="o">=</span> <span class="p">(</span><span class="n">japan</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">gdp_decade</span> <span class="o">+</span> <span class="s1">&#39;2&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="n">japan</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">gdp_decade</span> <span class="o">+</span> <span class="s1">&#39;7&#39;</span><span class="p">])</span> <span class="o">/</span> <span class="mi">2</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none"><div class="highlight"><pre>
+<span></span>In [86]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3"><div class="highlight"><pre>
+<span></span><span class="k">def</span> <span class="nf">eighties_avg</span><span class="p">(</span><span class="n">filepath</span><span class="p">,</span> <span class="n">country</span><span class="p">):</span>
+    <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">filepath</span><span class="p">,</span> <span class="n">index_col</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+    <span class="n">c</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">country</span><span class="p">]</span>
+    <span class="n">year</span> <span class="o">=</span> <span class="mi">1983</span>
+    <span class="n">gdp_decade</span> <span class="o">=</span> <span class="s1">&#39;gdpPercap_&#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">year</span> <span class="o">//</span> <span class="mi">10</span><span class="p">)</span>
+    <span class="n">avg</span> <span class="o">=</span> <span class="p">(</span><span class="n">c</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">gdp_decade</span> <span class="o">+</span> <span class="s1">&#39;2&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="n">c</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">gdp_decade</span> <span class="o">+</span> <span class="s1">&#39;7&#39;</span><span class="p">])</span> <span class="o">/</span> <span class="mi">2</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;The average in the 80s for &#39;</span><span class="p">,</span> <span class="n">country</span><span class="p">,</span> <span class="s1">&#39;was&#39;</span><span class="p">,</span> <span class="n">avg</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">avg</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none"><div class="highlight"><pre>
+<span></span>In [87]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3"><div class="highlight"><pre>
+<span></span><span class="n">eighties_avg</span><span class="p">(</span><span class="s1">&#39;data/gap_data/gapminder_gdp_asia.csv&#39;</span><span class="p">,</span> <span class="s1">&#39;Afghanistan&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+The average in the 80s for  Afghanistan was 915.2036918
+</pre></div></div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none"><div class="highlight"><pre>
+<span></span>Out[87]:
+</pre></div>
+</div>
+<div class="output_area highlight-none"><div class="highlight"><pre>
+<span></span>915.2036918
+</pre></div>
+</div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none"><div class="highlight"><pre>
+<span></span>In [67]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3"><div class="highlight"><pre>
+<span></span><span class="nb">str</span><span class="p">(</span><span class="n">year</span> <span class="o">//</span> <span class="mi">10</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none"><div class="highlight"><pre>
+<span></span>Out[67]:
+</pre></div>
+</div>
+<div class="output_area highlight-none"><div class="highlight"><pre>
+<span></span>1983
+</pre></div>
+</div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none"><div class="highlight"><pre>
+<span></span>In [68]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3"><div class="highlight"><pre>
+<span></span><span class="n">year</span> <span class="o">/</span> <span class="mi">10</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none"><div class="highlight"><pre>
+<span></span>Out[68]:
+</pre></div>
+</div>
+<div class="output_area highlight-none"><div class="highlight"><pre>
+<span></span>198.3
+</pre></div>
+</div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none"><div class="highlight"><pre>
+<span></span>In [72]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3"><div class="highlight"><pre>
+<span></span><span class="nb">str</span><span class="p">(</span><span class="n">year</span> <span class="o">//</span> <span class="mi">10</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39;2&#39;</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none"><div class="highlight"><pre>
+<span></span>Out[72]:
+</pre></div>
+</div>
+<div class="output_area highlight-none"><div class="highlight"><pre>
+<span></span>&#39;1982&#39;
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper"><div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2018, Jacob Frias Koehler, PhD.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.6.6</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.10</a>
+      
+      |
+      <a href="_sources/act-01-gapminder-solns.ipynb.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

@@ -1,0 +1,171 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Command Line and UNIX &#8212; Code Toolkit 0.0.1 documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Introduction to Python" href="04-Introduction-to-Python.html" />
+    <link rel="prev" title="Introduction to Data" href="02-Intro-to-Data.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="Command-Line-and-UNIX">
+<h1>Command Line and UNIX<a class="headerlink" href="#Command-Line-and-UNIX" title="Permalink to this headline">¶</a></h1>
+<div class="figure">
+<img alt="" src="images/unix/UNIX-plate.jpg" />
+</div>
+<p><strong>OBJECTIVES</strong>:</p>
+<ul class="simple">
+<li>Create, Delete, and Navigate files and directories in the Terminal</li>
+<li>Copy and Rename files in the Terminal</li>
+<li>Use Pipes and Filters to combine commands in Terminal</li>
+<li>Locating Files and things in Files in Terminal</li>
+</ul>
+<p>Before the advent of the mouse, computers were only able to interact
+with typed text commands. There are many advantages to this way of
+interacting with your machine, we will explore some of these today. I
+believe the terminal to be important in terms of the speed you are able
+to complete operations and the control that you have over these
+operations.</p>
+<div class="section" id="Introduction-to-Shell">
+<h2>Introduction to Shell<a class="headerlink" href="#Introduction-to-Shell" title="Permalink to this headline">¶</a></h2>
+<p>On a mac, I type <code class="docutils literal"><span class="pre">cmd</span></code> + <code class="docutils literal"><span class="pre">spacebar</span></code>, write <strong>terminal</strong> and hit
+<code class="docutils literal"><span class="pre">enter</span></code>. This will bring up a new terminal.</p>
+<ul class="simple">
+<li><strong>Navigating Files</strong></li>
+<li><code class="docutils literal"><span class="pre">cd</span></code>: Change directory</li>
+<li><code class="docutils literal"><span class="pre">pwd</span></code>: Print Working Directory</li>
+<li><code class="docutils literal"><span class="pre">ls</span></code>: List Files</li>
+<li><code class="docutils literal"><span class="pre">ls</span> <span class="pre">-F</span></code>: List Files with Flag</li>
+<li><code class="docutils literal"><span class="pre">ls</span> <span class="pre">-l</span></code>: List Files with more info (long)</li>
+<li><code class="docutils literal"><span class="pre">ls</span> <span class="pre">-R</span></code>: List Recursively</li>
+<li><code class="docutils literal"><span class="pre">ls</span> <span class="pre">-t</span></code>: List by time modified</li>
+<li><code class="docutils literal"><span class="pre">ls</span> <span class="pre">-R</span> <span class="pre">-t</span></code>: List recursively by time modified</li>
+<li><code class="docutils literal"><span class="pre">cd</span> <span class="pre">..</span></code>: Move one directory up</li>
+<li><code class="docutils literal"><span class="pre">cd</span> <span class="pre">~</span></code>: Move to root directory</li>
+</ul>
+</div>
+<div class="section" id="Files-and-Directories">
+<h2>Files and Directories<a class="headerlink" href="#Files-and-Directories" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><code class="docutils literal"><span class="pre">mkdir</span></code>: Creates directory</li>
+<li><code class="docutils literal"><span class="pre">touch</span></code>: Creates file</li>
+<li><code class="docutils literal"><span class="pre">nano</span></code>: Simple text editor in terminal</li>
+<li><code class="docutils literal"><span class="pre">rm</span></code>: Removes file (<strong>CAREFUL!</strong>)</li>
+<li><code class="docutils literal"><span class="pre">rm</span> <span class="pre">-r</span></code>: Removes recursively</li>
+<li><code class="docutils literal"><span class="pre">rm</span> <span class="pre">-i</span> <span class="pre">thesis/quotations.txt</span></code>: Removes responsibly</li>
+<li><code class="docutils literal"><span class="pre">rm</span> <span class="pre">-r</span> <span class="pre">-i</span> <span class="pre">thesis</span></code>: Recursive responsibilities</li>
+<li><code class="docutils literal"><span class="pre">mv</span></code>: Moves a file, also renames it</li>
+<li><code class="docutils literal"><span class="pre">cp</span></code>: Copies a file</li>
+</ul>
+</div>
+<div class="section" id="Investigating-Files">
+<h2>Investigating Files<a class="headerlink" href="#Investigating-Files" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><code class="docutils literal"><span class="pre">cat</span></code>: Displays file contents</li>
+<li><code class="docutils literal"><span class="pre">head</span></code>: Displays top rows of file</li>
+<li><code class="docutils literal"><span class="pre">tail</span></code>: Displays bottom rows of file</li>
+<li><code class="docutils literal"><span class="pre">sort</span></code>: Allows for different sorting</li>
+<li><code class="docutils literal"><span class="pre">wc</span></code>: Word Count</li>
+<li><code class="docutils literal"><span class="pre">*</span></code>: Wildcard meaning anything (*.pdf is all pdf files)</li>
+<li><code class="docutils literal"><span class="pre">?</span></code>: Match single element (?learning.pdf would match elearning.pdf,
+blearning.pdf, but not yearning.pdf)</li>
+<li><code class="docutils literal"><span class="pre">command</span> <span class="pre">&gt;</span> <span class="pre">file</span></code>: Directs output to file</li>
+<li><code class="docutils literal"><span class="pre">first</span> <span class="pre">|</span> <span class="pre">second</span></code>: Pipe to combine and link commands</li>
+<li><code class="docutils literal"><span class="pre">grep</span></code> : Get regular expression used to find things in documents</li>
+<li><code class="docutils literal"><span class="pre">grep</span> <span class="pre">-w</span></code>: restricts regular expression to matching word</li>
+<li><code class="docutils literal"><span class="pre">grep</span> <span class="pre">-n</span></code>: adds line number to output of regular expression</li>
+<li><code class="docutils literal"><span class="pre">grep</span> <span class="pre">-n</span> <span class="pre">-w</span></code>: combine numbering and word restriction</li>
+<li><code class="docutils literal"><span class="pre">grep</span> <span class="pre">-n</span> <span class="pre">-w</span> <span class="pre">-i</span></code>: adds case sensitivity to above example</li>
+<li><code class="docutils literal"><span class="pre">find</span> <span class="pre">.</span></code>: Find is used to find files</li>
+<li><code class="docutils literal"><span class="pre">find</span> <span class="pre">.</span> <span class="pre">-type</span> <span class="pre">d</span></code>: Find things that are directories</li>
+<li><code class="docutils literal"><span class="pre">find</span> <span class="pre">.</span> <span class="pre">-type</span> <span class="pre">f</span></code>: Find things that are files</li>
+<li><code class="docutils literal"><span class="pre">find</span> <span class="pre">.</span> <span class="pre">-name</span> <span class="pre">'*.txt'</span></code>: Find things by name</li>
+</ul>
+</div>
+<div class="section" id="Further-Reading">
+<h2>Further Reading<a class="headerlink" href="#Further-Reading" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Software Carpentry: <a class="reference external" href="http://swcarpentry.github.io/shell-novice/">**The UNIX
+Shell**</a></li>
+</ul>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper"><div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="02-Intro-to-Data.html" title="previous chapter">Introduction to Data</a></li>
+      <li>Next: <a href="04-Introduction-to-Python.html" title="next chapter">Introduction to Python</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2018, Jacob Frias Koehler, PhD.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.6.6</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.10</a>
+      
+      |
+      <a href="_sources/03-UNIX-and-Terminal.ipynb.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
