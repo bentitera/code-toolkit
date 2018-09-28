@@ -1,4 +1,0 @@
-sphinx>=1.4
-ipykernel
-nbsphinx
--e git+https://github.com/JuliaLang/JuliaDoc.git#egg=JuliaDoc
