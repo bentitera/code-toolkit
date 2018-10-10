@@ -16,7 +16,7 @@ df = pd.read_csv('data/yelp.csv')
 def is_good():
     food = flask.request.args['text']
     ans = df[df.text.str.contains(food)].nlargest(10, 'stars')
-    rev = ans.text
+    a = ans['text']
     return render_template('view.html', tables = [a.to_html()])
 
 
