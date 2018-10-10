@@ -2,220 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="898a6560-06b7-4d61-86a7-18ab39481a9b" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/content/.gitignore" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/content/01-Introduction-Installations.nbdata" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/content/requirements.txt" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/build/.buildinfo" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/.doctrees/.ipynb_checkpoints/lab_04-checkpoint.doctree" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/.doctrees/01-Introduction-Installations.doctree" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/.doctrees/02-Intro-to-Data.doctree" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/.doctrees/03-UNIX-and-Terminal.doctree" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/.doctrees/04-Introduction-to-Python.doctree" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/.doctrees/05-Exploring-with-Pandas.doctree" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/.doctrees/06-Pandas-and-Matplotlib.doctree" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/.doctrees/07-Folium.doctree" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/.doctrees/08-Beautiful-Soup-Scraping.doctree" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/.doctrees/09-Intro-Spacy.doctree" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/.doctrees/act-01-gapminder-probs.doctree" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/.doctrees/act-01-gapminder-solns.doctree" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/.doctrees/environment.pickle" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/.doctrees/index.doctree" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/.doctrees/lab_01.doctree" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/.doctrees/lab_02-policin.doctree" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/.doctrees/lab_04.doctree" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/.doctrees/nbsphinx/02-Intro-to-Data_16_1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/.doctrees/nbsphinx/02-Intro-to-Data_21_1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/.doctrees/nbsphinx/04-Introduction-to-Python_55_1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/.doctrees/nbsphinx/04-Introduction-to-Python_56_1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/.doctrees/nbsphinx/04-Introduction-to-Python_58_1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/.doctrees/nbsphinx/04-Introduction-to-Python_60_1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/.doctrees/nbsphinx/04-Introduction-to-Python_61_1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/.doctrees/nbsphinx/04-Introduction-to-Python_62_0.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/.doctrees/nbsphinx/04-Introduction-to-Python_63_1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/.doctrees/nbsphinx/04-Introduction-to-Python_64_1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/.doctrees/nbsphinx/05-Exploring-with-Pandas_27_1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/.doctrees/nbsphinx/05-Exploring-with-Pandas_30_1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/.doctrees/nbsphinx/05-Exploring-with-Pandas_31_1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/.doctrees/nbsphinx/05-Exploring-with-Pandas_32_1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/.doctrees/nbsphinx/05-Exploring-with-Pandas_33_1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/.doctrees/nbsphinx/05-Exploring-with-Pandas_34_1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/.doctrees/nbsphinx/05-Exploring-with-Pandas_38_1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/.doctrees/nbsphinx/05-Exploring-with-Pandas_40_1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/.doctrees/nbsphinx/05-Exploring-with-Pandas_41_1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/.doctrees/nbsphinx/05-Exploring-with-Pandas_42_1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/.doctrees/nbsphinx/05-Exploring-with-Pandas_43_1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/.doctrees/nbsphinx/05-Exploring-with-Pandas_44_1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/.doctrees/nbsphinx/05-Exploring-with-Pandas_45_1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/.doctrees/nbsphinx/05-Exploring-with-Pandas_46_1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/.doctrees/nbsphinx/05-Exploring-with-Pandas_47_1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/.doctrees/nbsphinx/05-Exploring-with-Pandas_48_1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/.doctrees/nbsphinx/06-Pandas-and-Matplotlib_23_1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/.doctrees/nbsphinx/06-Pandas-and-Matplotlib_24_1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/.doctrees/nbsphinx/06-Pandas-and-Matplotlib_25_1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/.doctrees/nbsphinx/lab_02-policin_5_1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/.doctrees/syllabus.doctree" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/.ipynb_checkpoints/lab_04-checkpoint.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/01-Introduction-Installations.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/02-Intro-to-Data.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/03-UNIX-and-Terminal.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/04-Introduction-to-Python.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/05-Exploring-with-Pandas.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/06-Pandas-and-Matplotlib.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/07-Folium.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/08-Beautiful-Soup-Scraping.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/09-Intro-Spacy.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/_images/02-Intro-to-Data_16_1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/_images/02-Intro-to-Data_21_1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/_images/04-Introduction-to-Python_55_1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/_images/04-Introduction-to-Python_56_1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/_images/04-Introduction-to-Python_58_1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/_images/04-Introduction-to-Python_60_1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/_images/04-Introduction-to-Python_61_1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/_images/04-Introduction-to-Python_62_0.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/_images/04-Introduction-to-Python_63_1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/_images/04-Introduction-to-Python_64_1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/_images/05-Exploring-with-Pandas_27_1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/_images/05-Exploring-with-Pandas_30_1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/_images/05-Exploring-with-Pandas_31_1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/_images/05-Exploring-with-Pandas_32_1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/_images/05-Exploring-with-Pandas_33_1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/_images/05-Exploring-with-Pandas_34_1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/_images/05-Exploring-with-Pandas_38_1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/_images/05-Exploring-with-Pandas_40_1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/_images/05-Exploring-with-Pandas_41_1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/_images/05-Exploring-with-Pandas_42_1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/_images/05-Exploring-with-Pandas_43_1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/_images/05-Exploring-with-Pandas_44_1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/_images/05-Exploring-with-Pandas_45_1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/_images/05-Exploring-with-Pandas_46_1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/_images/05-Exploring-with-Pandas_47_1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/_images/05-Exploring-with-Pandas_48_1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/_images/06-Pandas-and-Matplotlib_23_1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/_images/06-Pandas-and-Matplotlib_24_1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/_images/06-Pandas-and-Matplotlib_25_1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/_images/TNS_Logo1_Small_RGB.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/_images/folium.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/_images/jumpst.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/_images/lab_02-policin_5_1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/_images/nypd.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/_images/open_table.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/_images/pitch1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/_images/pitch2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/_images/pitch2b.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/_images/pitch_ind.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/_images/reddit.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/_images/sac.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/_images/spacy_pipeline.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/_images/wiki_table.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/_sources/.ipynb_checkpoints/lab_04-checkpoint.ipynb.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/_sources/01-Introduction-Installations.ipynb.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/_sources/02-Intro-to-Data.ipynb.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/_sources/03-UNIX-and-Terminal.ipynb.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/_sources/04-Introduction-to-Python.ipynb.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/_sources/05-Exploring-with-Pandas.ipynb.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/_sources/06-Pandas-and-Matplotlib.ipynb.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/_sources/07-Folium.ipynb.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/_sources/08-Beautiful-Soup-Scraping.ipynb.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/_sources/09-Intro-Spacy.ipynb.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/_sources/act-01-gapminder-probs.ipynb.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/_sources/act-01-gapminder-solns.ipynb.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/_sources/index.rst.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/_sources/lab_01.ipynb.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/_sources/lab_02-policin.ipynb.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/_sources/lab_04.ipynb.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/_sources/syllabus.ipynb.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/_static/agogo.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/_static/ajax-loader.gif" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/_static/alabaster.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/_static/basic.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/_static/bgfooter.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/_static/bgtop.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/_static/comment-bright.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/_static/comment-close.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/_static/comment.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/_static/custom.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/_static/doctools.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/_static/down-pressed.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/_static/down.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/_static/file.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/_static/jquery-3.1.0.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/_static/jquery.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/_static/minus.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/_static/plus.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/_static/pygments.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/_static/searchtools.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/_static/underscore-1.3.1.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/_static/underscore.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/_static/up-pressed.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/_static/up.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/_static/websupport.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/act-01-gapminder-probs.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/act-01-gapminder-solns.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/genindex.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/lab_01.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/lab_02-policin.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/lab_04.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/objects.inv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/search.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/searchindex.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/syllabus.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/.ipynb_checkpoints/lab_04-checkpoint.ipynb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/01-Introduction-Installations.ipynb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/02-Intro-to-Data.ipynb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/03-UNIX-and-Terminal.ipynb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/04-Introduction-to-Python.ipynb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/05-Exploring-with-Pandas.ipynb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/06-Pandas-and-Matplotlib.ipynb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/07-Folium.ipynb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/08-Beautiful-Soup-Scraping.ipynb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/09-Intro-Spacy.ipynb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/Makefile" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/README.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/act-01-gapminder-probs.ipynb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/act-01-gapminder-solns.ipynb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/conf.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/data/201306-citibike-tripdata.zip" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/data/500_Cities__Census_Tract-level_Data__GIS_Friendly_Format___2017_release_.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/data/Country.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/data/game_google.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/data/gap_data/gapminder_all.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/data/gap_data/gapminder_gdp_africa.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/data/gap_data/gapminder_gdp_americas.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/data/gap_data/gapminder_gdp_asia.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/data/gap_data/gapminder_gdp_europe.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/data/gap_data/gapminder_gdp_oceania.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/data/sqf-2017.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/images/Small/1/TNS_Logo1_Small_CMYK.ai" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/images/Small/1/TNS_Logo1_Small_CMYK.eps" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/images/Small/1/TNS_Logo1_Small_RGB.ai" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/images/Small/1/TNS_Logo1_Small_RGB.eps" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/images/Small/3/TNS_Logo3_Small_CMYK.ai" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/images/Small/3/TNS_Logo3_Small_CMYK.eps" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/images/Small/3/TNS_Logo3_Small_RGB.ai" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/images/Small/3/TNS_Logo3_Small_RGB.eps" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/images/Small/3/TNS_Logo3_Small_RGB.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/images/TNS_Logo1_Small_RGB.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/images/folium.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/images/jumpst.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/images/nypd.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/images/open_table.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/images/pitch1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/images/pitch2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/images/pitch2b.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/images/pitch_ind.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/images/reddit.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/images/sac.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/images/spacy_pipeline.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/images/wiki_table.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/index.rst" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/lab_01.ipynb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/lab_02-policin.ipynb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/lab_04.ipynb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/syllabus.ipynb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/syllabus.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/content/09-Intro-Spacy.ipynb" afterPath="$PROJECT_DIR$/content/09-Intro-Spacy.ipynb" />
+      <change beforePath="$PROJECT_DIR$/content/lab_04.ipynb" afterPath="$PROJECT_DIR$/content/lab_04.ipynb" />
+      <change beforePath="$PROJECT_DIR$/content/requirements.txt" afterPath="$PROJECT_DIR$/content/requirements.txt" />
+      <change beforePath="$PROJECT_DIR$/output/archives.html" afterPath="$PROJECT_DIR$/output/archives.html" />
+      <change beforePath="$PROJECT_DIR$/output/authors.html" afterPath="$PROJECT_DIR$/output/authors.html" />
+      <change beforePath="$PROJECT_DIR$/output/categories.html" afterPath="$PROJECT_DIR$/output/categories.html" />
+      <change beforePath="$PROJECT_DIR$/output/index.html" afterPath="$PROJECT_DIR$/output/index.html" />
+      <change beforePath="$PROJECT_DIR$/output/tags.html" afterPath="$PROJECT_DIR$/output/tags.html" />
+      <change beforePath="$PROJECT_DIR$/output/theme/images/icons/bitbucket.png" afterPath="$PROJECT_DIR$/output/theme/images/icons/bitbucket.png" />
+      <change beforePath="$PROJECT_DIR$/output/theme/images/icons/delicious.png" afterPath="$PROJECT_DIR$/output/theme/images/icons/delicious.png" />
+      <change beforePath="$PROJECT_DIR$/output/theme/images/icons/facebook.png" afterPath="$PROJECT_DIR$/output/theme/images/icons/facebook.png" />
+      <change beforePath="$PROJECT_DIR$/output/theme/images/icons/github.png" afterPath="$PROJECT_DIR$/output/theme/images/icons/github.png" />
+      <change beforePath="$PROJECT_DIR$/output/theme/images/icons/gitorious.png" afterPath="$PROJECT_DIR$/output/theme/images/icons/gitorious.png" />
+      <change beforePath="$PROJECT_DIR$/output/theme/images/icons/lastfm.png" afterPath="$PROJECT_DIR$/output/theme/images/icons/lastfm.png" />
+      <change beforePath="$PROJECT_DIR$/output/theme/images/icons/linkedin.png" afterPath="$PROJECT_DIR$/output/theme/images/icons/linkedin.png" />
+      <change beforePath="$PROJECT_DIR$/output/theme/images/icons/rss.png" afterPath="$PROJECT_DIR$/output/theme/images/icons/rss.png" />
+      <change beforePath="$PROJECT_DIR$/output/theme/images/icons/stackoverflow.png" afterPath="$PROJECT_DIR$/output/theme/images/icons/stackoverflow.png" />
+      <change beforePath="$PROJECT_DIR$/output/theme/images/icons/twitter.png" afterPath="$PROJECT_DIR$/output/theme/images/icons/twitter.png" />
+      <change beforePath="$PROJECT_DIR$/pelicanconf.py" afterPath="$PROJECT_DIR$/pelicanconf.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -225,24 +31,54 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="pelicanconf.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pelicanconf.py">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="pitchfork.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pitchscrape/reviews/spiders/pitchfork.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="12" lean-forward="false" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+            <state relative-caret-position="990">
+              <caret line="69" column="41" lean-forward="false" selection-start-line="69" selection-start-column="41" selection-end-line="69" selection-end-column="71" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="items.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pitchscrape/reviews/items.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="22" column="13" lean-forward="false" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pipelines.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pitchscrape/reviews/pipelines.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="405">
+              <caret line="27" column="19" lean-forward="false" selection-start-line="27" selection-start-column="19" selection-end-line="27" selection-end-column="19" />
               <folding>
-                <element signature="e#48#87#0" expanded="true" />
+                <element signature="e#289#302#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="01-Introduction-Installations.nbdata" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/content/01-Introduction-Installations.nbdata">
+      <file leaf-file-name="hello_name.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pitchscrape/hello_name.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pitchscrape/reviews/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="23" column="16" lean-forward="false" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -269,6 +105,10 @@
         <option value="$PROJECT_DIR$/content/.gitignore" />
         <option value="$PROJECT_DIR$/content/requirements.txt" />
         <option value="$PROJECT_DIR$/pelicanconf.py" />
+        <option value="$PROJECT_DIR$/pitchscrape/reviews/pipelines.py" />
+        <option value="$PROJECT_DIR$/pitchscrape/reviews/items.py" />
+        <option value="$PROJECT_DIR$/pitchscrape/reviews/spiders/pitchfork.py" />
+        <option value="$PROJECT_DIR$/pitchscrape/reviews/settings.py" />
       </list>
     </option>
   </component>
@@ -278,8 +118,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="545" />
+  <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="823" />
@@ -309,12 +148,19 @@
             <path>
               <item name="code_toolkit" type="b2602c69:ProjectViewProjectNode" />
               <item name="code_toolkit" type="462c0819:PsiDirectoryNode" />
-              <item name="content" type="462c0819:PsiDirectoryNode" />
+              <item name="pitchscrape" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="code_toolkit" type="b2602c69:ProjectViewProjectNode" />
               <item name="code_toolkit" type="462c0819:PsiDirectoryNode" />
-              <item name="output" type="462c0819:PsiDirectoryNode" />
+              <item name="pitchscrape" type="462c0819:PsiDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="code_toolkit" type="b2602c69:ProjectViewProjectNode" />
+              <item name="code_toolkit" type="462c0819:PsiDirectoryNode" />
+              <item name="pitchscrape" type="462c0819:PsiDirectoryNode" />
+              <item name=".ipynb_checkpoints" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -366,28 +212,28 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="824" extended-state="6" />
+    <frame x="0" y="23" width="1440" height="823" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15277778" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -406,51 +252,51 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/requirements.txt">
+    <entry file="file://$PROJECT_DIR$/pitchscrape/reviews/spiders/pitchfork.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+        <state relative-caret-position="990">
+          <caret line="69" column="41" lean-forward="false" selection-start-line="69" selection-start-column="41" selection-end-line="69" selection-end-column="71" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/conf.py">
+    <entry file="file://$PROJECT_DIR$/pitchscrape/reviews/items.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="403">
-          <caret line="96" column="19" lean-forward="false" selection-start-line="96" selection-start-column="19" selection-end-line="96" selection-end-column="19" />
+        <state relative-caret-position="330">
+          <caret line="22" column="13" lean-forward="true" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/index.rst">
+    <entry file="file://$PROJECT_DIR$/pitchscrape/reviews/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+        <state relative-caret-position="345">
+          <caret line="23" column="16" lean-forward="false" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/output/index.html">
+    <entry file="file://$PROJECT_DIR$/pitchscrape/reviews/pipelines.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="696">
-          <caret line="110" column="10" lean-forward="false" selection-start-line="110" selection-start-column="10" selection-end-line="110" selection-end-column="10" />
-          <folding />
+        <state relative-caret-position="375">
+          <caret line="27" column="19" lean-forward="true" selection-start-line="27" selection-start-column="19" selection-end-line="27" selection-end-column="19" />
+          <folding>
+            <element signature="e#289#302#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/content/requirements.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-          <folding />
+        <state relative-caret-position="270">
+          <caret line="18" column="8" lean-forward="false" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pelicanconf.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="38" column="27" lean-forward="false" selection-start-line="38" selection-start-column="27" selection-end-line="38" selection-end-column="27" />
         </state>
       </provider>
     </entry>
@@ -458,7 +304,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt" />
+    <entry file="file://$PROJECT_DIR$/source/conf.py" />
+    <entry file="file://$PROJECT_DIR$/source/index.rst" />
+    <entry file="file://$PROJECT_DIR$/output/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -466,17 +321,83 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/plugins/ipynb/markup.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2490">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="696">
+          <caret line="110" column="10" lean-forward="false" selection-start-line="110" selection-start-column="10" selection-end-line="110" selection-end-column="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pelicanconf.py">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="38" column="27" lean-forward="false" selection-start-line="38" selection-start-column="27" selection-end-line="38" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="8" lean-forward="false" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/01-Introduction-Installations.nbdata">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
-          <caret line="8" column="12" lean-forward="false" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pitchscrape/reviews/items.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="13" lean-forward="false" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pitchscrape/reviews/spiders/pitchfork.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="990">
+          <caret line="69" column="41" lean-forward="false" selection-start-line="69" selection-start-column="41" selection-end-line="69" selection-end-column="71" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pitchscrape/reviews/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="16" lean-forward="false" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pitchscrape/reviews/pipelines.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="19" lean-forward="false" selection-start-line="27" selection-start-column="19" selection-end-line="27" selection-end-column="19" />
           <folding>
-            <element signature="e#48#87#0" expanded="true" />
+            <element signature="e#289#302#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pitchscrape/hello_name.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

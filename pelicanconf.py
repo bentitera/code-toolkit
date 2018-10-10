@@ -36,7 +36,7 @@ DEFAULT_PAGINATION = 10
 MARKUP = ('md', 'ipynb')
 
 PLUGIN_PATH = ['./plugins']
-PLUGINS = ['ipynb.markup']
+PLUGINS = ['ipynb/markup.py']
 THEME = 'pelican-themes/aboutwilson'
 
 #JINJA_ENVIRONMENT = {'extensions': ['jinja2.ext.i18n']}
